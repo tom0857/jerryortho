@@ -598,6 +598,101 @@
       .compare-table { font-size: 15px; }
       .compare-table th, .compare-table td { padding: 10px 12px; }
     }
+
+    /* ── Superscript references ── */
+    .ref-sup {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
+      vertical-align: super;
+      line-height: 0;
+      text-decoration: none;
+      margin-left: 1px;
+    }
+    .ref-sup:hover { color: var(--navy); }
+
+    /* ── References list ── */
+    .references-section {
+      padding: 40px 0 8px;
+      border-top: 2px solid var(--border);
+    }
+    .references-section h3 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 18px;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ref-list li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      display: flex;
+      gap: 10px;
+    }
+    .ref-num {
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      min-width: 24px;
+    }
+    .ref-list a {
+      color: var(--gold);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .ref-list a:hover { text-decoration: underline; }
+
+    /* ── Doctor link banner ── */
+    .doctor-link-banner {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 32px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .doctor-link-banner:hover { background: var(--gold-pale); }
+    .doctor-link-icon {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+    .doctor-link-text { flex: 1; }
+    .doctor-link-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .doctor-link-sub {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .doctor-link-arrow {
+      font-size: 20px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -647,7 +742,7 @@
         體外震波治療（ESWT，Extracorporeal Shock Wave Therapy）是一種透過儀器將高能量聲波導入體內的非侵入性治療。聽起來很複雜，原理其實很直覺——慢性肌腱受傷之後，局部的血液循環變差、修復反應停滯。震波的能量打進去，等於給那個「卡住」的組織一個強烈的物理刺激，讓身體重新啟動修復機制。
       </p>
       <p>
-        不需要打針、不需要開刀，治療過程 5～10 分鐘，結束後可以直接走路回家，不需要任何恢復期。
+        不需要打針、不需要開刀，治療過程 5～10 分鐘，結束後可以直接走路回家，不需要任何恢復期。<a href="#ref-1" class="ref-sup">[1]</a>
       </p>
 
       <!-- 三大適應症 -->
@@ -759,7 +854,7 @@
         <li>網球肘、足底筋膜炎、媽媽手等慢性肌腱問題，症狀超過 6 週</li>
         <li>曾嘗試休息、護具、物理治療，但效果有限</li>
         <li>不希望接受注射或手術，想先嘗試非侵入性治療</li>
-        <li>類固醇注射效果減退，或不想再打類固醇</li>
+        <li>類固醇注射效果減退，或不想再打類固醇<a href="#ref-2" class="ref-sup">[2]</a></li>
         <li>工作忙碌，需要不影響日常活動的治療方式</li>
       </ul>
 
@@ -799,7 +894,7 @@
           </button>
           <div class="faq-a" role="region">
             <div class="faq-a-inner">
-              體外震波是目前國際骨科指引對慢性肌腱病變的建議治療之一，有多項臨床研究支持，尤其對網球肘和足底筋膜炎效果最受肯定。大多數患者完成三次療程後都有明顯改善，病程越短、效果通常越好。當然每個人狀況不同，唐醫師在治療前會幫你評估是否適合。
+              體外震波是目前國際骨科指引對慢性肌腱病變的建議治療之一，有多項臨床研究支持<a href="#ref-3" class="ref-sup">[3]</a>，尤其對網球肘和足底筋膜炎效果最受肯定。大多數患者完成三次療程後都有明顯改善，病程越短、效果通常越好。當然每個人狀況不同，唐醫師在治療前會幫你評估是否適合。
             </div>
           </div>
         </div>

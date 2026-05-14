@@ -590,6 +590,101 @@
       .doctor-quote { flex-direction: column; gap: 14px; padding: 24px 20px; }
       .cta-section { padding: 28px 20px; }
     }
+
+    /* ── Superscript references ── */
+    .ref-sup {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
+      vertical-align: super;
+      line-height: 0;
+      text-decoration: none;
+      margin-left: 1px;
+    }
+    .ref-sup:hover { color: var(--navy); }
+
+    /* ── References list ── */
+    .references-section {
+      padding: 40px 0 8px;
+      border-top: 2px solid var(--border);
+    }
+    .references-section h3 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 18px;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ref-list li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      display: flex;
+      gap: 10px;
+    }
+    .ref-num {
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      min-width: 24px;
+    }
+    .ref-list a {
+      color: var(--gold);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .ref-list a:hover { text-decoration: underline; }
+
+    /* ── Doctor link banner ── */
+    .doctor-link-banner {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 32px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .doctor-link-banner:hover { background: var(--gold-pale); }
+    .doctor-link-icon {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+    .doctor-link-text { flex: 1; }
+    .doctor-link-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .doctor-link-sub {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .doctor-link-arrow {
+      font-size: 20px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -632,7 +727,7 @@
         葡萄糖增生治療（Prolotherapy）是將高濃度的葡萄糖溶液，精準注射到受傷的肌腱、韌帶或關節附近。葡萄糖本身沒有生長因子，它的作用是在局部製造一個輕微的發炎刺激——讓身體以為這裡「又受傷了」，重新派出修復部隊來處理這個長期被忽視的慢性病灶。
       </p>
       <p>
-        慢性組織損傷最麻煩的地方，就是身體已經放棄修復了。葡萄糖增生治療的邏輯很直接：<strong>重新點燃那個被遺忘的修復反應。</strong>
+        慢性組織損傷最麻煩的地方，就是身體已經放棄修復了。葡萄糖增生治療的邏輯很直接：<strong>重新點燃那個被遺忘的修復反應。</strong><a href="#ref-1" class="ref-sup">[1]</a>
       </p>
 
       <div class="mechanism-box">
@@ -668,7 +763,7 @@
         <li>慢性軟組織疼痛（肌腱炎、韌帶鬆弛）已超過 6 週，保守治療效果有限</li>
         <li>運動後反覆出現的關節或肌腱疼痛</li>
         <li>輕中度退化性關節炎，希望延緩退化、減少疼痛</li>
-        <li>不希望接受侵入性較高的治療，想先從較溫和的方式開始</li>
+        <li>不希望接受侵入性較高的治療，想先從較溫和的方式開始<a href="#ref-2" class="ref-sup">[2]</a></li>
         <li>年輕、身體狀況良好、自我修復能力相對較強</li>
       </ul>
 
@@ -743,7 +838,7 @@
 
       <div class="case-box">
         <div class="case-label">治療過程</div>
-        <p>唐醫師以超音波導引，針對股四頭肌撕裂的部位精準注射葡萄糖溶液，完成完整療程後，超音波追蹤顯示肌腱修復良好。</p>
+        <p>唐醫師以超音波導引，針對股四頭肌撕裂的部位精準注射葡萄糖溶液，完成完整療程後，超音波追蹤顯示肌腱修復良好。<a href="#ref-3" class="ref-sup">[3]</a></p>
         <div class="case-result">
           ✦ 療程結束後，他重新回到球場——這次，沒有再疼痛了。
         </div>
