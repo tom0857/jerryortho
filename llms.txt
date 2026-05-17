@@ -1,0 +1,25 @@
+# 杰立骨科診所
+
+> 高雄市鳳山區骨科專科診所，由具備榮總手術背景的骨科專科醫師唐士杰主持，
+> 提供超音波導引精準注射、再生療法（PRP、羊膜基質）、體外震波、手法治療
+> 及骨質疏鬆完整照護。
+
+## 核心療程
+
+- [PRP 自體血小板治療](https://jerryortho.com/articles/prp-treatment.html)：膝關節退化、肌腱病變的 PRP 注射療程，含治療原理、適應症與常見問答
+- [羊膜基質再生治療](https://jerryortho.com/articles/amniotic-matrix.html)：含豐富生長因子的進階再生注射，適合重度退化或 PRP 效果有限者
+- [體外震波治療](https://jerryortho.com/articles/shockwave-therapy.html)：足底筋膜炎、鈣化性肌腱炎、網球肘的非侵入性治療
+- [高濃度葡萄糖增生療法](https://jerryortho.com/articles/prolotherapy.html)：促進韌帶與肌腱自我修復的增生注射治療
+
+## 醫師團隊
+
+- [關於院長唐士杰醫師](https://jerryortho.com/#about)：台中榮民總醫院骨科專科訓練，足踝、脊椎、關節重建、運動醫學背景
+
+## 衛教文章
+
+- [衛教文章總覽](https://jerryortho.com/articles/)：骨科與復健相關衛教知識
+
+## Optional
+
+- [常見問題](https://jerryortho.com/#faq)：病患常見疑問解答（含 FAQPage Schema）
+- [交通資訊與門診時間](https://jerryortho.com/#info)：高雄市鳳山區文龍東路136號，07-733-0409
