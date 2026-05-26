@@ -127,8 +127,7 @@
     /* ── Hero ── */
     .hero {
       background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #1e3060 100%);
-      padding: 72px 24px 60px;
-      text-align: center;
+      padding: 60px 40px;
       position: relative;
       overflow: hidden;
     }
@@ -138,6 +137,17 @@
       background: radial-gradient(ellipse 70% 60% at 50% 110%, rgba(184,150,90,0.18) 0%, transparent 70%);
       pointer-events: none;
     }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content { }
     .hero-tag {
       display: inline-block;
       background: rgba(184,150,90,0.2);
@@ -147,37 +157,38 @@
       letter-spacing: 0.12em;
       padding: 6px 16px;
       border-radius: 20px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
     .hero h1 {
       font-family: 'Noto Serif TC', serif;
-      font-size: clamp(28px, 4vw, 42px);
+      font-size: clamp(26px, 3.5vw, 40px);
       color: #fff;
       font-weight: 700;
       line-height: 1.45;
-      max-width: 900px;
-      margin: 0 auto 16px;
+      margin: 0 0 16px;
     }
     .hero h1 span { color: var(--gold-light); }
     .hero-sub {
       color: rgba(255,255,255,0.75);
-      font-size: 18px;
-      margin: 0 auto 36px;
-      max-width: 600px;
+      font-size: 17px;
+      line-height: 1.8;
     }
-
-    /* ── Photo ── */
     .hero-photo {
-      max-width: 860px;
-      margin: 0 auto;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      max-height: 420px;
     }
     .hero-photo img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
       display: block;
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-photo { max-height: 260px; }
     }
 
     /* ── Layout ── */
@@ -391,11 +402,15 @@
 
 <!-- Hero -->
 <div class="hero">
-  <div class="hero-tag">核心技術</div>
-  <h1>開過刀的手，<br><span>拿起超音波探頭。</span></h1>
-  <p class="hero-sub">復健科或影像科醫師的超音波技術可能更純熟，但在會開刀的骨科醫師裡，對組織解剖的立體理解，讓每一針都更有把握。</p>
-  <div class="hero-photo">
-    <img src="../ultrasound.jpg" alt="唐士杰院長執行超音波導引注射實況">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">核心技術</div>
+      <h1>開過刀的手，<br><span>拿起超音波探頭。</span></h1>
+      <p class="hero-sub">復健科或影像科醫師的超音波技術可能更純熟，但在會開刀的骨科醫師裡，對組織解剖的立體理解，讓每一針都更有把握。</p>
+    </div>
+    <div class="hero-photo">
+      <img src="../ultrasound.jpg" alt="唐士杰院長執行超音波導引注射實況">
+    </div>
   </div>
 </div>
 
