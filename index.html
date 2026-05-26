@@ -229,7 +229,7 @@ section { padding: 7rem 0; }
 
 /* ── CTA ── */
 #cta { background: var(--cream); text-align: center; padding: 8rem 0; border-top: 1px solid var(--border); }
-.cta-inner { max-width: 660px; margin: 0 auto; padding: 0 2.5rem; }
+.cta-inner { max-width: 100%; margin: 0 auto; padding: 0 2.5rem; }
 .cta-pre { font-size: 1.3rem; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.1rem; }
 .cta-title { font-family: 'Noto Sans TC', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 1.35rem; font-weight: 400; line-height: 1.4; }
 .cta-sub { font-size: 1.25rem; color: var(--text-mid); margin-bottom: 2.75rem; line-height: 1.9; }
@@ -244,6 +244,54 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
 .footer-logo span { color: var(--gold-light); }
 .footer-info { font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem; }
 .footer-note { font-size: 1.3rem; color: rgba(255,255,255,0.3); line-height: 1.75; text-align: right; }
+
+
+/* ── DROPDOWN ── */
+.nav-dropdown { position: relative; }
+.nav-dropdown-trigger { cursor: pointer; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%);
+  background: rgba(253,252,250,0.98);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(26,39,68,0.12);
+  list-style: none;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 200;
+  margin-top: 8px;
+}
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute; top: -6px; left: 50%;
+  transform: translateX(-50%);
+  width: 12px; height: 12px;
+  background: rgba(253,252,250,0.98);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: translateX(-50%) rotate(45deg);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.nav-dropdown-menu li a:hover {
+  background: var(--cream);
+  color: var(--navy);
+}
+.nav-dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
 
 /* ── REVEAL ── */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
@@ -463,8 +511,18 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   <a href="#" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;"><img src="https://jerryortho.com/Logo.png" alt="杰立骨科" style="height:36px; width:auto; display:block;">杰立骨科診所</a>
   <ul class="nav-links">
     <li><a href="#about">關於院長</a></li>
-    <li><a href="#treatments">治療項目</a></li>
-    <li><a href="#osteoporosis">骨質疏鬆</a></li>
+    <li class="nav-dropdown">
+      <a href="#treatments" class="nav-dropdown-trigger">治療項目 ▾</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="/articles/ultrasound-injection.html">超音波導引注射</a></li>
+        <li><a href="/articles/prp-treatment.html">PRP 增生治療</a></li>
+        <li><a href="/articles/amniotic-matrix.html">羊膜基質再生治療</a></li>
+        <li><a href="/articles/prolotherapy.html">高濃度葡萄糖增生治療</a></li>
+        <li><a href="/articles/shockwave-therapy.html">體外震波治療</a></li>
+        <li><a href="#osteoporosis">骨質疏鬆篩檢與治療</a></li>
+      </ul>
+    </li>
+    <li><a href="/articles/pricing.html">費用說明</a></li>
     <li><a href="#info">看診資訊</a></li>
     <li><a href="tel:077330409" class="nav-cta">立即預約</a></li>
   </ul>
@@ -580,124 +638,11 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   </div>
 </section>
 
-<section id="ultrasound">
-  <div class="container">
-    <div class="us-grid">
-      <div class="us-visual reveal">
-        <img src="ultrasound.jpg" alt="杰立骨科診所超音波導引注射實況">
-      </div>
-      <div class="reveal">
-        <div class="section-tag">核心技術</div>
-        <h2 class="section-title">開過刀的手，<br>拿起超音波探頭。</h2>
-        <p class="section-sub" style="margin-bottom:0;">復健科或影像科醫師的超音波技術可能比我更純熟。但在會開刀的骨科醫師裡，對組織解剖的立體理解，讓每一針都更有把握。</p>
-        <ul class="us-points">
-          <li class="us-point">
-            <div class="us-point-icon">🎯</div>
-            <div class="us-point-text"><strong>手術等級的解剖知識</strong>開過刀的醫師知道皮膚底下長什麼樣子，針要走哪條路、避開什麼結構，不是靠感覺，是靠積累的經驗。</div>
-          </li>
-          <li class="us-point">
-            <div class="us-point-icon">👁️</div>
-            <div class="us-point-text"><strong>即時超音波影像引導</strong>全程螢幕監控，針頭路徑清晰可見，精準到達病灶，不浪費每一滴藥物。</div>
-          </li>
-          <li class="us-point">
-            <div class="us-point-icon">✅</div>
-            <div class="us-point-text"><strong>讓您親眼看見問題所在</strong>注射前先掃描病灶，讓您清楚了解受傷位置，理解為什麼需要這個治療。</div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="treatments">
-  <div class="container">
-    <div class="treatments-intro">
-      <div class="reveal">
-        <div class="section-tag">治療項目</div>
-        <h2 class="section-title">精準再生，<br>讓身體自己修復</h2>
-      </div>
-      <p class="section-sub reveal">所有自費注射治療，全程使用高階超音波導引，由骨科專科醫師親自操作，確保藥物精準送達病灶。</p>
-    </div>
-    <div class="treatment-cards">
-      <div class="treatment-card reveal">
-        <div class="treatment-icon">🩸</div>
-        <div class="treatment-name">PRP 自體血小板增生治療</div>
-        <div class="treatment-sub">Platelet-Rich Plasma</div>
-        <p class="treatment-desc">抽取自身血液，離心濃縮出高濃度血小板，注射回受損組織。利用生長因子促進自然修復，適合長期肌腱病變、退化性關節炎、反覆疼痛久未痊癒者。</p>
-        <div class="treatment-tags">
-          <span class="tag">肌腱病變</span><span class="tag">退化性關節炎</span><span class="tag">網球肘</span>
-        </div>
-        <div class="treatment-inquiry">歡迎來診評估是否適合</div>
-        <a href="/articles/prp-treatment.html" style="display:inline-block; margin-top:1rem; font-size:0.95rem; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:2px;">了解更多 →</a>
-      </div>
-      <div class="treatment-card reveal">
-        <div class="treatment-icon">✨</div>
-        <div class="treatment-name">羊膜基質再生治療</div>
-        <div class="treatment-sub">Amniotic Matrix Injection</div>
-        <p class="treatment-desc">利用羊膜基質中豐富的生長因子與細胞外基質，提供強效再生刺激。適合重度退化、嚴重肌腱撕裂，或 PRP 效果有限的難治性疼痛。</p>
-        <div class="treatment-tags">
-          <span class="tag">重度退化</span><span class="tag">嚴重肌腱撕裂</span><span class="tag">難治性疼痛</span>
-        </div>
-        <div class="treatment-inquiry">歡迎來診評估是否適合</div>
-        <a href="/articles/amniotic-matrix.html" style="display:inline-block; margin-top:1rem; font-size:0.95rem; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:2px;">了解更多 →</a>
-      </div>
-      <div class="treatment-card reveal">
-        <div class="treatment-icon">💉</div>
-        <div class="treatment-name">高濃度葡萄糖增生治療</div>
-        <div class="treatment-sub">Prolotherapy</div>
-        <p class="treatment-desc">注射高濃度葡萄糖水至韌帶或肌腱附著點，透過輕微刺激引發修復反應，強化鬆弛韌帶與不穩定關節。療效累積，適合多次療程。</p>
-        <div class="treatment-tags">
-          <span class="tag">韌帶鬆弛</span><span class="tag">關節不穩定</span><span class="tag">慢性疼痛</span>
-        </div>
-        <div class="treatment-inquiry">歡迎來診評估是否適合</div>
-        <a href="/articles/prolotherapy.html" style="display:inline-block; margin-top:1rem; font-size:0.95rem; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:2px;">了解更多 →</a>
-      </div>
-      <div class="treatment-card reveal">
-        <div class="treatment-icon">⚡</div>
-        <div class="treatment-name">體外震波治療</div>
-        <div class="treatment-sub">Extracorporeal Shockwave Therapy</div>
-        <p class="treatment-desc">以高能量聲波衝擊慢性疼痛部位，打散鈣化沉積、促進局部血流與組織再生。對保守治療無效的足底筋膜炎、鈣化性肌腱炎效果顯著，無需開刀。</p>
-        <div class="treatment-tags">
-          <span class="tag">足底筋膜炎</span><span class="tag">鈣化性肌腱炎</span><span class="tag">網球肘</span>
-        </div>
-        <div class="treatment-inquiry">建議完整三次療程，間隔一週</div>
-        <a href="/articles/shockwave-therapy.html" style="display:inline-block; margin-top:1rem; font-size:0.95rem; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:2px;">了解更多 →</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="osteoporosis">
-  <div class="container">
-    <div class="osteo-grid">
-      <div class="reveal">
-        <div class="section-tag osteo-tag">骨質疏鬆篩檢與治療</div>
-        <h2 class="section-title" style="color:#fff;">骨折之前，<br>先把骨頭顧好</h2>
-        <p class="section-sub" style="color:rgba(255,255,255,0.58);">骨質疏鬆是沉默的疾病，多數人直到骨折才發現。杰立是少數提供完整骨質疏鬆篩檢與追蹤治療的基層診所。</p>
-        <div class="osteo-features">
-          <div class="osteo-feature">
-            <div class="osteo-feature-icon">📊</div>
-            <div class="osteo-feature-text"><strong>AI 骨密度快速篩檢</strong>低輻射、快速方便，初步評估骨質狀況，決定是否需進一步檢查。</div>
-          </div>
-          <div class="osteo-feature">
-            <div class="osteo-feature-icon">💊</div>
-            <div class="osteo-feature-text"><strong>完整藥物治療與追蹤</strong>口服及注射型骨鬆藥物，定期追蹤骨密度變化，防止骨折發生。</div>
-          </div>
-          <div class="osteo-feature">
-            <div class="osteo-feature-icon">🦴</div>
-            <div class="osteo-feature-text"><strong>骨折預防整合照護</strong>結合骨科專業與復健，從藥物到運動指導，全方位降低骨折風險。</div>
-          </div>
-        </div>
-      </div>
-      <div class="osteo-visual reveal">
-        <div class="osteo-stat-big">50%</div>
-        <div class="osteo-stat-label">50歲以上女性<br>約有一半患有骨質疏鬆</div>
-        <div class="osteo-stat-divider"></div>
-        <div class="osteo-stat-note">骨質疏鬆導致的髖部骨折，一年內死亡率高達 20%。早期篩檢、早期治療，是預防骨折最有效的方式。</div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+
 
 <section id="info">
   <div class="container">
@@ -765,11 +710,14 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   </div>
 </section>
 
+
+
+
 <section id="cta">
   <div class="cta-inner reveal">
     <div class="cta-pre">預約看診</div>
-    <h2 class="cta-title">不確定要不要手術？<br>先來聊聊。</h2>
-    <p class="cta-sub">長期疼痛、保守治療效果有限，或是不確定自己到底需不需要手術？<br>歡迎來診所讓唐醫師仔細評估，找出問題真正的所在。</p>
+    <h2 class="cta-title">不確定要不要手術？先來聊聊。</h2>
+    <p class="cta-sub">歡迎來診所讓唐醫師仔細評估，找出問題真正的所在。</p>
     <div class="cta-btns">
       <a href="tel:077330409" class="btn-primary">📞 立即來電預約</a>
       <a href="#info" class="btn-secondary">查看看診時間</a>
