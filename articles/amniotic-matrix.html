@@ -591,6 +591,41 @@
       .tag-row { gap: 8px; }
     }
 
+
+    /* ── Pricing table ── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+    .pricing-table th {
+      background: var(--navy);
+      color: var(--gold-light);
+      padding: 14px 18px;
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 600;
+      text-align: left;
+    }
+    .pricing-table th:first-child { border-radius: 6px 0 0 0; }
+    .pricing-table th:last-child { border-radius: 0 6px 0 0; }
+    .pricing-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: middle;
+    }
+    .pricing-table tr:nth-child(even) td { background: #fff; }
+    .pricing-table tr:nth-child(odd) td { background: var(--cream); }
+    .pricing-table td:first-child { font-weight: 500; color: var(--navy); }
+    .pricing-table td:nth-child(2) {
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 700;
+      color: var(--gold);
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
     /* ── Superscript references ── */
     .ref-sup {
       font-size: 13px;
@@ -607,6 +642,11 @@
     .references-section {
       padding: 40px 0 8px;
       border-top: 2px solid var(--border);
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 32px;
+      padding-right: 32px;
     }
     .references-section h3 {
       font-family: 'Noto Serif TC', serif;
@@ -842,9 +882,47 @@
       </div>
     </section>
 
-    <!-- Section 5: FAQ -->
+    <!-- Section 5: 費用說明 -->
     <section class="section">
-      <p class="section-label">05 · 常見問題</p>
+      <p class="section-label">05 · 費用說明</p>
+      <h2>自費價格透明公開</h2>
+      <p>以下為羊膜基質注射的自費收費標準，所有療程均由唐士杰醫師親自執行，搭配超音波導引注射。實際療程次數與注射劑量，依門診評估結果而定。</p>
+
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>費用</th>
+            <th>說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>羊膜基質注射（單針 10mg）</td>
+            <td>NT$28,000</td>
+            <td>每次間隔約 3 個月</td>
+          </tr>
+          <tr>
+            <td>建議完整療程</td>
+            <td>NT$28,000 起</td>
+            <td>1–2 次，依退化程度由醫師評估</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="notes-box" style="margin-top: 20px;">
+        <h3>💡 關於費用</h3>
+        <ul>
+          <li>以上為自費項目，健保不給付</li>
+          <li>實際注射劑量與療程次數依退化程度與恢復狀況由醫師評估決定</li>
+          <li>初次就診建議攜帶過往檢查報告（X光、超音波或 MRI），有助醫師評估</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 6: FAQ -->
+    <section class="section">
+      <p class="section-label">06 · 常見問題</p>
       <h2>病患最常問的三個問題</h2>
       <div class="faq-list">
 
@@ -889,13 +967,23 @@
 
 
     <!-- Doctor link banner -->
-    <a href="https://jerryortho.com/#about" class="doctor-link-banner">
+    <div class="doctor-link-banner" onclick="window.location='https://jerryortho.com/#about'" style="cursor:pointer;">
       <div class="doctor-link-icon">唐</div>
       <div class="doctor-link-text">
         <span class="doctor-link-title">想多了解唐士杰醫師？</span>
         <span class="doctor-link-sub">足踝專科・脊椎專科・關節重建，前台中榮總骨科主治醫師</span>
+        <span class="doctor-link-sub" style="margin-top:6px; display:block;">
+          <a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D"
+             target="_blank" rel="noopener"
+             style="color: var(--gold); text-decoration: none; font-size: 14px;"
+             onclick="event.stopPropagation();">
+            🏛 衛福部醫事人員查詢 →
+          </a>
+        </span>
       </div>
-      <span class="doctor-link-arrow">→</span>
+    </div>
+        </span>
+      </div>
     </a>
 
     <!-- References -->
@@ -905,31 +993,31 @@
         <li id="ref-1">
           <span class="ref-num">[1]</span>
           <span>Huddleston HP, et al. (2020). Amniotic product treatments: clinical and basic science evidence. <em>Current Reviews in Musculoskeletal Medicine</em>, 13(2): 148–154.
-            <a href="https://doi.org/10.1007/s12178-020-09614-2" target="_blank" rel="noopener">doi: 10.1007/s12178-020-09614-2</a>
+            <a href="https://doi.org/10.1007/s12178-020-09614-2" target="_blank" rel="noopener">https://doi.org/10.1007/s12178-020-09614-2</a>
           </span>
         </li>
         <li id="ref-2">
           <span class="ref-num">[2]</span>
           <span>Screpis D, et al. (2022). Human Amniotic Suspension Allograft Improves Pain and Function in Knee Osteoarthritis. <em>Journal of Clinical Medicine</em>, 11(5): 1268.
-            <a href="https://doi.org/10.3390/jcm11051268" target="_blank" rel="noopener">doi: 10.3390/jcm11051268</a>
+            <a href="https://doi.org/10.3390/jcm11051268" target="_blank" rel="noopener">https://doi.org/10.3390/jcm11051268</a>
           </span>
         </li>
         <li id="ref-3">
           <span class="ref-num">[3]</span>
           <span>Gomoll AH, et al. (2023). Efficacy of Amniotic Suspension Allografts in the Treatment of Knee Osteoarthritis: A Systematic Review. <em>Arthroscopy</em>, 39(1): 66–78.
-            <a href="https://doi.org/10.1016/j.arthro.2022.06.036" target="_blank" rel="noopener">doi: 10.1016/j.arthro.2022.06.036</a>
+            <a href="https://doi.org/10.1016/j.arthro.2022.06.036" target="_blank" rel="noopener">https://doi.org/10.1016/j.arthro.2022.06.036</a>
           </span>
         </li>
         <li id="ref-4">
           <span class="ref-num">[4]</span>
           <span>Gomoll AH, et al. (2021). Safety and Efficacy of an Amniotic Suspension Allograft Injection Over 12 Months in a Single-Blinded, Randomized Controlled Trial for Symptomatic Osteoarthritis of the Knee. <em>Arthroscopy</em>, 37(7): 2246–2257.
-            <a href="https://doi.org/10.1016/j.arthro.2021.02.044" target="_blank" rel="noopener">doi: 10.1016/j.arthro.2021.02.044</a>
+            <a href="https://doi.org/10.1016/j.arthro.2021.02.044" target="_blank" rel="noopener">https://doi.org/10.1016/j.arthro.2021.02.044</a>
           </span>
         </li>
         <li id="ref-5">
           <span class="ref-num">[5]</span>
           <span>Farr J, Gomoll AH, et al. (2019). A Randomized Controlled Single-Blind Study Demonstrating Superiority of Amniotic Suspension Allograft Injection Over Hyaluronic Acid and Saline Control for Modification of Knee Osteoarthritis Symptoms. <em>Journal of Knee Surgery</em>, 32: 1143–1154.
-            <a href="https://doi.org/10.1055/s-0039-1696672" target="_blank" rel="noopener">doi: 10.1055/s-0039-1696672</a>
+            <a href="https://doi.org/10.1055/s-0039-1696672" target="_blank" rel="noopener">https://doi.org/10.1055/s-0039-1696672</a>
           </span>
         </li>
       </ol>

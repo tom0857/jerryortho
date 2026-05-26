@@ -599,6 +599,41 @@
       .compare-table th, .compare-table td { padding: 10px 12px; }
     }
 
+
+    /* ── Pricing table ── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+    .pricing-table th {
+      background: var(--navy);
+      color: var(--gold-light);
+      padding: 14px 18px;
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 600;
+      text-align: left;
+    }
+    .pricing-table th:first-child { border-radius: 6px 0 0 0; }
+    .pricing-table th:last-child { border-radius: 0 6px 0 0; }
+    .pricing-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: middle;
+    }
+    .pricing-table tr:nth-child(even) td { background: #fff; }
+    .pricing-table tr:nth-child(odd) td { background: var(--cream); }
+    .pricing-table td:first-child { font-weight: 500; color: var(--navy); }
+    .pricing-table td:nth-child(2) {
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 700;
+      color: var(--gold);
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
     /* ── Superscript references ── */
     .ref-sup {
       font-size: 13px;
@@ -615,6 +650,11 @@
     .references-section {
       padding: 40px 0 8px;
       border-top: 2px solid var(--border);
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 32px;
+      padding-right: 32px;
     }
     .references-section h3 {
       font-family: 'Noto Serif TC', serif;
@@ -869,9 +909,52 @@
       </div>
     </section>
 
-    <!-- Section 4: FAQ -->
+    <!-- Section 4: 費用說明 -->
     <section class="section">
-      <p class="section-label">04 · 常見問題</p>
+      <p class="section-label">04 · 費用說明</p>
+      <h2>自費價格透明公開</h2>
+      <p>以下為體外震波治療的自費收費標準。實際發數依部位與病灶範圍而定。</p>
+
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>費用</th>
+            <th>說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>體外震波（每發）</td>
+            <td>NT$1 / 發</td>
+            <td>依部位 1,500–2,000 發不等</td>
+          </tr>
+          <tr>
+            <td>單次治療費用</td>
+            <td>NT$1,500–2,000</td>
+            <td>依部位與發數計算</td>
+          </tr>
+          <tr>
+            <td>建議完整療程</td>
+            <td>NT$4,500–6,000</td>
+            <td>共 3 次，每次間隔 1 週</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="notes-box" style="margin-top: 20px;">
+        <h3>💡 關於費用</h3>
+        <ul>
+          <li>以上為自費項目，健保不給付</li>
+          <li>實際發數依部位大小與病灶嚴重程度由醫師現場評估</li>
+          <li>治療完整療程效果最佳，中途停止可能影響修復成效</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 5: FAQ -->
+    <section class="section">
+      <p class="section-label">05 · 常見問題</p>
       <h2>病患最常問的三個問題</h2>
       <div class="faq-list">
 
@@ -916,13 +999,23 @@
 
 
     <!-- Doctor link banner -->
-    <a href="https://jerryortho.com/#about" class="doctor-link-banner">
+    <div class="doctor-link-banner" onclick="window.location='https://jerryortho.com/#about'" style="cursor:pointer;">
       <div class="doctor-link-icon">唐</div>
       <div class="doctor-link-text">
         <span class="doctor-link-title">想多了解唐士杰醫師？</span>
         <span class="doctor-link-sub">足踝專科・脊椎專科・關節重建，前台中榮總骨科主治醫師</span>
+        <span class="doctor-link-sub" style="margin-top:6px; display:block;">
+          <a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D"
+             target="_blank" rel="noopener"
+             style="color: var(--gold); text-decoration: none; font-size: 14px;"
+             onclick="event.stopPropagation();">
+            🏛 衛福部醫事人員查詢 →
+          </a>
+        </span>
       </div>
-      <span class="doctor-link-arrow">→</span>
+    </div>
+        </span>
+      </div>
     </a>
 
     <!-- References -->
@@ -932,31 +1025,31 @@
         <li id="ref-1">
           <span class="ref-num">[1]</span>
           <span>Aldajah S, et al. (2022). Analgesic Effect of Extracorporeal Shock-Wave Therapy in Individuals with Lateral Epicondylitis: A Randomized Controlled Trial. <em>Journal of Functional Morphology and Kinesiology</em>, 7(1): 29.
-            <a href="https://doi.org/10.3390/jfmk7010029" target="_blank" rel="noopener">doi: 10.3390/jfmk7010029</a>
+            <a href="https://doi.org/10.3390/jfmk7010029" target="_blank" rel="noopener">https://doi.org/10.3390/jfmk7010029</a>
           </span>
         </li>
         <li id="ref-2">
           <span class="ref-num">[2]</span>
           <span>Perveen W, et al. (2024). Effects of extracorporeal shockwave therapy versus ultrasonic therapy and deep friction massage in the management of lateral epicondylitis: a randomized clinical trial. <em>Scientific Reports</em>, 14: 16535.
-            <a href="https://doi.org/10.1038/s41598-024-67313-1" target="_blank" rel="noopener">doi: 10.1038/s41598-024-67313-1</a>
+            <a href="https://doi.org/10.1038/s41598-024-67313-1" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-024-67313-1</a>
           </span>
         </li>
         <li id="ref-3">
           <span class="ref-num">[3]</span>
           <span>Arirachakaran A, et al. (2023). Ultrasound-guided injection of platelet-rich plasma for tendinopathies: a systematic review and meta-analysis. <em>Blood Transfusion</em>, 21(2): 119–136.
-            <a href="https://doi.org/10.2450/2022.0087-22" target="_blank" rel="noopener">doi: 10.2450/2022.0087-22</a>
+            <a href="https://doi.org/10.2450/2022.0087-22" target="_blank" rel="noopener">https://doi.org/10.2450/2022.0087-22</a>
           </span>
         </li>
         <li id="ref-4">
           <span class="ref-num">[4]</span>
           <span>Pandey S, et al. (2023). Extracorporeal Shockwave Therapy Versus Platelet Rich Plasma Injection in Patients of Chronic Plantar Fasciitis: A Randomized Controlled Trial. <em>Cureus</em>, 15(1): e34430.
-            <a href="https://doi.org/10.7759/cureus.34430" target="_blank" rel="noopener">doi: 10.7759/cureus.34430</a>
+            <a href="https://doi.org/10.7759/cureus.34430" target="_blank" rel="noopener">https://doi.org/10.7759/cureus.34430</a>
           </span>
         </li>
         <li id="ref-5">
           <span class="ref-num">[5]</span>
           <span>Nambi G, et al. (2022). MRI and Ultrasound Analysis of Corticosteroid Injection Combined with Extracorporeal Shockwave Therapy in Lateral Epicondylitis: A Prospective, Randomized, Double-Blinded, Placebo-Controlled Trial. <em>Journal of Personalized Medicine</em>, 12(11): 1892.
-            <a href="https://doi.org/10.3390/jpm12111892" target="_blank" rel="noopener">doi: 10.3390/jpm12111892</a>
+            <a href="https://doi.org/10.3390/jpm12111892" target="_blank" rel="noopener">https://doi.org/10.3390/jpm12111892</a>
           </span>
         </li>
       </ol>
