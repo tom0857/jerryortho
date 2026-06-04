@@ -71,7 +71,7 @@
     .hero { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #1e3060 100%); padding: 60px 24px 50px; text-align: center; }
     .hero-tag { display: inline-block; background: rgba(184,150,90,0.2); border: 1px solid var(--gold); color: var(--gold-light); font-size: 16px; letter-spacing: 0.12em; padding: 6px 16px; border-radius: 20px; margin-bottom: 20px; }
     .hero h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 4vw, 42px); color: #fff; font-weight: 700; line-height: 1.45; margin: 0 auto 12px; }
-    .hero-sub { color: rgba(255,255,255,0.72); font-size: 19px; margin: 0 auto; max-width: 560px; }
+    .hero-sub { color: rgba(255,255,255,0.72); font-size: 19px; margin: 0 auto; max-width: 700px; }
 
     main { max-width: 960px; margin: 0 auto; padding: 0 32px 60px; }
 
@@ -82,7 +82,9 @@
     .article-card { background: var(--warm-white); border: 1px solid var(--border); border-radius: 8px; padding: 26px 24px; text-decoration: none; transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; display: flex; flex-direction: column; }
     .article-card:hover { border-color: var(--gold); box-shadow: 0 6px 20px rgba(26,39,68,0.08); transform: translateY(-2px); }
     .article-icon { font-size: 32px; margin-bottom: 14px; }
-    .article-name { font-family: 'Noto Serif TC', serif; font-weight: 700; color: var(--navy); font-size: 21px; margin-bottom: 10px; line-height: 1.4; }
+    .article-name { font-family: 'Noto Serif TC', serif; font-weight: 700; color: var(--navy); font-size: 20px; margin-bottom: 10px; line-height: 1.5; }
+    .symptom-main { font-family: 'Noto Serif TC', serif; font-weight: 700; color: var(--navy); font-size: 26px; line-height: 1.4; margin-bottom: 10px; }
+    .symptom-sub { display: block; font-size: 17px; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
     .article-desc { color: var(--text-muted); font-size: 17px; line-height: 1.7; flex: 1; }
     .article-more { color: var(--gold); font-size: 16px; margin-top: 14px; font-weight: 500; }
 
@@ -115,7 +117,7 @@
 <div class="hero">
   <div class="hero-tag">衛教專欄</div>
   <h1>骨科衛教文章</h1>
-  <p class="hero-sub">用白話文，把骨科的問題說清楚。從症狀到治療，幫你了解自己的身體。</p>
+  <p class="hero-sub">從症狀到治療，幫你了解自己的身體。</p>
 </div>
 
 <main>
@@ -126,7 +128,7 @@
     <div class="article-grid">
       <a href="/articles/knee-osteoarthritis.html" class="article-card">
         <div class="article-icon">🦵</div>
-        <div class="article-name">膝蓋退化（退化性膝關節炎）</div>
+        <div class="symptom-main">膝蓋痛<span class="symptom-sub">退化性膝關節炎</span></div>
         <div class="article-desc">膝蓋退化是什麼？什麼時候該看醫師？PRP、羊膜、玻尿酸怎麼選？唐醫師完整說明。</div>
         <div class="article-more">閱讀文章 →</div>
       </a>
