@@ -177,7 +177,7 @@
     }
     .hero h1 span { color: var(--gold-light); }
 
-    .article-wrap { max-width: 860px; margin: -32px auto 0; padding: 0 24px 60px; position: relative; z-index: 2; }
+    .article-wrap { max-width: 1040px; margin: -32px auto 0; padding: 0 24px 60px; position: relative; z-index: 2; }
     .article-card {
       background: var(--warm-white);
       border: 1px solid var(--border);
@@ -308,12 +308,15 @@
     .ref-list { list-style: none; counter-reset: ref; display: flex; flex-direction: column; gap: 12px; }
     .ref-list li {
       counter-increment: ref;
-      font-size: 16px; color: var(--text-muted); line-height: 1.6;
-      display: flex; gap: 12px;
+      font-size: 16px; color: var(--text-muted); line-height: 1.7;
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 12px;
     }
     .ref-list li::before {
       content: '〔' counter(ref) '〕';
-      color: var(--gold); font-weight: 600; flex-shrink: 0;
+      color: var(--gold); font-weight: 600;
+      position: absolute; left: 0; top: 0;
     }
     .ref-list a { color: var(--gold); text-decoration: none; word-break: break-all; }
     .ref-list a:hover { text-decoration: underline; }
@@ -380,7 +383,7 @@
     <div class="section">
       <h2>一、五十肩到底是什麼？</h2>
       <p>五十肩，醫學正式名稱為「沾黏性關節囊炎」。簡單講，就是包住肩關節的關節囊發炎、纖維化，變得又厚又緊，像被一層收縮的保鮮膜緊緊裹住，所以越來越緊、越來越難動。它有個很惱人的特性：不只痛，而且是「主動、被動角度都被卡住」，尤其手往外轉最先受影響。</p>
-      <p>五十肩好發在四十到六十歲（所以才叫五十肩），女性比較多，糖尿病的朋友風險明顯更高<a href="#ref-1" class="ref-sup">〔1〕</a>。它通常會經過疼痛期、冷凍期、解凍期，雖然多數人最後會慢慢好，但整個過程可能拖上一到三年。而且它不像大家以為的那麼「一定會自己好」——有研究追蹤發現，大約四成的人在平均四年後仍有殘餘症狀（多數屬於輕微）<a href="#ref-2" class="ref-sup">〔2〕</a>。所以與其乾等，不如及早處理。</p>
+      <p>五十肩好發在四十到六十歲（所以才叫五十肩），女性比較多，糖尿病的朋友風險明顯更高<a href="#ref-1" class="ref-sup">〔1〕</a>。它通常會經過疼痛期、冷凍期、解凍期，雖然多數人最後會慢慢好，但整個過程可能拖上一到三年。而且它不像大家以為的那麼「一定會自己好」——近年文獻指出，有相當比例的人即使過了好幾年，肩膀仍留有一些殘餘症狀<a href="#ref-1" class="ref-sup">〔1〕</a>。所以與其乾等，不如及早處理。</p>
     </div>
 
     <!-- 二 -->
@@ -406,19 +409,23 @@
     <!-- 四 -->
     <div class="section">
       <h2>四、五十肩怎麼治療？</h2>
-      <p>治療五十肩需要很個人化的治療模式，因為目前沒有一個非常明確的治療流程<a href="#ref-1" class="ref-sup">〔1〕</a>，但大致上可以依疾病的分期來考慮。</p>
+      <p>治療五十肩需要很個人化的治療模式，因為目前沒有一個非常明確的治療流程<a href="#ref-2" class="ref-sup">〔2〕</a>，但大致上可以依疾病的分期來考慮。</p>
       <div class="treat-list">
         <div class="treat-item">
           <div class="treat-name">🔥 疼痛期</div>
-          <div class="treat-desc">如果還在很痛、但角度卡得還沒那麼死，會建議做關節內的類固醇注射。它有「診斷兼治療」的意義——打對位置，痛能明顯降下來，再配合物理治療，研究顯示可以加速止痛、縮短僵硬的病程<a href="#ref-3" class="ref-sup">〔3,4〕</a>。</div>
+          <div class="treat-desc">如果還在很痛、但角度卡得還沒那麼死，會建議做關節內的類固醇注射。它有「診斷兼治療」的意義——打對位置，痛能明顯降下來，再配合物理治療，研究顯示可以加速止痛、縮短僵硬的病程<a href="#ref-2" class="ref-sup">〔2〕</a>。</div>
         </div>
         <div class="treat-item">
           <div class="treat-name">❄ 冷凍期（全角度都卡住）</div>
-          <div class="treat-desc">這時候光止痛不夠，得想辦法把那層收縮的關節囊「撐開」。我們會做所謂的「關節囊擴張術」——用藥水把關節囊撐開。它短期改善角度和疼痛的效果不錯，而且最大的好處是不需要麻醉就能在診間做；長期效果的證據還在累積，所以一定要搭配復健、徒手治療，才能把撐開的角度「守」住<a href="#ref-5" class="ref-sup">〔5〕</a>。（鬆動術、關節鏡手術也能鬆開，但那需要麻醉。）</div>
+          <div class="treat-desc">這時候光止痛不夠，得想辦法把那層收縮的關節囊「撐開」。我們會做所謂的「關節囊擴張術」——用藥水把關節囊撐開。它短期改善角度和疼痛的效果不錯，而且最大的好處是不需要麻醉就能在診間做；長期效果的證據還在累積，所以一定要搭配復健、徒手治療，才能把撐開的角度「守」住<a href="#ref-3" class="ref-sup">〔3〕</a>。（鬆動術、關節鏡手術也能鬆開，但那需要麻醉。）</div>
         </div>
+      </div>
+
+      <p style="margin-top:28px;">除了依分期處理，還有幾個跨階段都可以搭配考慮的選項：</p>
+      <div class="treat-list">
         <div class="treat-item">
           <div class="treat-name">🩸 PRP</div>
-          <div class="treat-desc">研究多顯示 PRP 用在五十肩安全有效，中長期的止痛效果可能優於單純的類固醇注射<a href="#ref-6" class="ref-sup">〔6〕</a>，是另一個可以考慮的選項。但前提一樣——要先確定真的是五十肩、放在對的順序裡。</div>
+          <div class="treat-desc">研究多顯示 PRP 用在五十肩安全有效，中長期的止痛效果可能優於單純的類固醇注射<a href="#ref-4" class="ref-sup">〔4〕</a>，是另一個可以考慮的選項。但前提一樣——要先確定真的是五十肩、放在對的順序裡。</div>
         </div>
         <div class="treat-item">
           <div class="treat-name">🤲 輔助治療</div>
@@ -461,7 +468,7 @@
       <h2>七、常見問題</h2>
       <div class="faq-item">
         <div class="faq-q">五十肩一定要打針嗎？</div>
-        <div class="faq-a">如果已經正確診斷是五十肩，我會建議積極處理。疼痛期打類固醇配合物理治療，可以讓病程縮短不少<a href="#ref-3" class="ref-sup">〔3,4〕</a>；到了冷凍期、角度全卡住，在不麻醉的前提下，關節囊擴張是能明顯改善角度的方式<a href="#ref-5" class="ref-sup">〔5〕</a>。當然每個人狀況不同，要不要打、打什麼，還是要經過評估再決定。</div>
+        <div class="faq-a">如果已經正確診斷是五十肩，我會建議積極處理。疼痛期打類固醇配合物理治療，可以讓病程縮短不少<a href="#ref-2" class="ref-sup">〔2〕</a>；到了冷凍期、角度全卡住，在不麻醉的前提下，關節囊擴張是能明顯改善角度的方式<a href="#ref-3" class="ref-sup">〔3〕</a>。當然每個人狀況不同，要不要打、打什麼，還是要經過評估再決定。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">肩膀痛、晚上睡覺壓到會痛，就是五十肩嗎？</div>
@@ -469,7 +476,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">五十肩可以打 PRP 嗎？</div>
-        <div class="faq-a">可以。研究多顯示 PRP 用在五十肩安全有效，中長期止痛可能優於單純的類固醇注射<a href="#ref-6" class="ref-sup">〔6〕</a>。但有個前提：要先確定你真的是五十肩、而且把 PRP 放在對的治療順序裡——診斷沒做對、或沒搭配該階段的處置，效果就會打折。</div>
+        <div class="faq-a">可以。研究多顯示 PRP 用在五十肩安全有效，中長期止痛可能優於單純的類固醇注射<a href="#ref-4" class="ref-sup">〔4〕</a>。但有個前提：要先確定你真的是五十肩、而且把 PRP 放在對的治療順序裡——診斷沒做對、或沒搭配該階段的處置，效果就會打折。</div>
       </div>
     </div>
 
@@ -497,11 +504,9 @@
       <h3>參考文獻</h3>
       <ol class="ref-list">
         <li id="ref-1">Millar NL, Meakins A, Struyf F, et al. Frozen shoulder. <em>Nat Rev Dis Primers</em>. 2022;8(1):59. <a href="https://doi.org/10.1038/s41572-022-00386-2" target="_blank" rel="noopener noreferrer">doi:10.1038/s41572-022-00386-2</a></li>
-        <li id="ref-2">Hand C, Clipsham K, Rees JL, Carr AJ. Long-term outcome of frozen shoulder. <em>J Shoulder Elbow Surg</em>. 2008;17(2):231-236. <a href="https://doi.org/10.1016/j.jse.2007.05.009" target="_blank" rel="noopener noreferrer">doi:10.1016/j.jse.2007.05.009</a></li>
-        <li id="ref-3">Ranalletta M, Rossi LA, Bongiovanni SL, et al. Corticosteroid Injections Accelerate Pain Relief and Recovery of Function Compared With Oral NSAIDs in Patients With Adhesive Capsulitis: A Randomized Controlled Trial. <em>Am J Sports Med</em>. 2016;44(2):474-481. <a href="https://doi.org/10.1177/0363546515616238" target="_blank" rel="noopener noreferrer">doi:10.1177/0363546515616238</a></li>
-        <li id="ref-4">Ahn JH, Lee DH, Kang H, et al. Early Intra-articular Corticosteroid Injection Improves Pain and Function in Adhesive Capsulitis of the Shoulder. <em>PM R</em>. 2018;10(1):19-27. <a href="https://doi.org/10.1016/j.pmrj.2017.06.004" target="_blank" rel="noopener noreferrer">doi:10.1016/j.pmrj.2017.06.004</a></li>
-        <li id="ref-5">Saltychev M, Laimi K, Virolainen P, Fredericson M. Effectiveness of Hydrodilatation in Adhesive Capsulitis of Shoulder: A Systematic Review and Meta-Analysis. <em>Scand J Surg</em>. 2018;107(4):285-293. <a href="https://doi.org/10.1177/1457496918772367" target="_blank" rel="noopener noreferrer">doi:10.1177/1457496918772367</a></li>
-        <li id="ref-6">Xu C, Wang Z, Tan J, et al. Comparison of the efficacy of platelet-rich plasma versus corticosteroid in the treatment of adhesive capsulitis: a systematic review and meta-analysis based on randomized controlled trials. <em>Front Med</em>. 2026. <a href="https://doi.org/10.3389/fmed.2026.1766836" target="_blank" rel="noopener noreferrer">doi:10.3389/fmed.2026.1766836</a></li>
+        <li id="ref-2">Zhang J, Zhong S, Tan T, et al. Comparative Efficacy and Patient-Specific Moderating Factors of Nonsurgical Treatment Strategies for Frozen Shoulder: An Updated Systematic Review and Network Meta-analysis. <em>Am J Sports Med</em>. 2021;49(6):1669-1679. <a href="https://doi.org/10.1177/0363546520956293" target="_blank" rel="noopener noreferrer">doi:10.1177/0363546520956293</a></li>
+        <li id="ref-3">Poku D, Hassan R, Migliorini F, Maffulli N. Efficacy of hydrodilatation in frozen shoulder: a systematic review and meta-analysis. <em>Br Med Bull</em>. 2023;147(1):121-147. <a href="https://doi.org/10.1093/bmb/ldad018" target="_blank" rel="noopener noreferrer">doi:10.1093/bmb/ldad018</a></li>
+        <li id="ref-4">Xu C, Wang Z, Tan J, et al. Comparison of the efficacy of platelet-rich plasma versus corticosteroid in the treatment of adhesive capsulitis: a systematic review and meta-analysis based on randomized controlled trials. <em>Front Med</em>. 2026. <a href="https://doi.org/10.3389/fmed.2026.1766836" target="_blank" rel="noopener noreferrer">doi:10.3389/fmed.2026.1766836</a></li>
       </ol>
     </div>
 
