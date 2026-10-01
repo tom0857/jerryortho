@@ -1,25 +1,40 @@
 # 杰立骨科診所
 
-> 高雄市鳳山區骨科專科診所，由具備榮總手術背景的骨科專科醫師唐士杰主持，
-> 提供超音波導引精準注射、再生療法（PRP、羊膜基質）、體外震波、手法治療
-> 及骨質疏鬆完整照護。
+> 高雄市鳳山區骨科專科診所，院長唐士杰醫師為前台中榮民總醫院骨科主治醫師，專長足踝、脊椎、關節重建。
+> 提供超音波導引注射、再生注射治療（PRP、羊膜基質、高濃度葡萄糖增生治療）、體外震波、徒手治療及骨質疏鬆篩檢與治療。
+> 可線上掛號，也可來電預約。
 
-## 核心療程
+## 掛號與聯絡
 
-- [PRP 自體血小板治療](https://jerryortho.com/articles/prp-treatment.html)：膝關節退化、肌腱病變的 PRP 注射療程，含治療原理、適應症與常見問答
-- [羊膜基質再生治療](https://jerryortho.com/articles/amniotic-matrix.html)：含豐富生長因子的進階再生注射，適合重度退化或 PRP 效果有限者
+- [線上掛號（PinMed 網路掛號）](https://pinmed.co/clinic/v1vmxzuk?openAppointment=true)：杰立骨科診所提供線上掛號
+- [LINE 官方帳號](https://lin.ee/QGhrTQt)：選單內可線上掛號（同 PinMed），也會發布停診通知
+- 電話預約：07-733-0409
+- 地址：高雄市鳳山區文龍東路136號
+- 醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。
+- 復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。
+- [交通資訊與門診時間](https://jerryortho.com/#info)
+
+## 醫師
+
+- [院長唐士杰醫師](https://jerryortho.com/#about)：高雄醫學大學醫學系畢業，台中榮民總醫院骨科專科訓練並留任主治醫師，專長足踝、脊椎、關節重建
+- [衛福部醫事人員查詢](https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D)：唐士杰醫師執業資格驗證
+
+## 治療項目
+
+- [超音波導引注射](https://jerryortho.com/articles/ultrasound-injection.html)：所有注射治療全程超音波即時影像導引，由院長親自操作
+- [PRP 自體血小板增生治療](https://jerryortho.com/articles/prp-treatment.html)：肌腱病變、退化性關節炎的再生注射
+- [羊膜基質再生治療](https://jerryortho.com/articles/amniotic-matrix.html)：重度退化、嚴重肌腱損傷或 PRP 效果有限者的進階再生注射
+- [高濃度葡萄糖增生治療](https://jerryortho.com/articles/prolotherapy.html)：強化韌帶與肌腱附著點，改善慢性疼痛與關節不穩定
 - [體外震波治療](https://jerryortho.com/articles/shockwave-therapy.html)：足底筋膜炎、鈣化性肌腱炎、網球肘的非侵入性治療
-- [高濃度葡萄糖增生療法](https://jerryortho.com/articles/prolotherapy.html)：促進韌帶與肌腱自我修復的增生注射治療
+- [骨質疏鬆篩檢與治療](https://jerryortho.com/articles/osteoporosis-screening.html)：骨密度檢測與藥物治療追蹤
+- [自費項目費用說明](https://jerryortho.com/articles/pricing.html)：PRP、羊膜基質、玻尿酸、體外震波、徒手治療費用公開
 
-## 醫師團隊
+## 症狀衛教文章
 
-- [關於院長唐士杰醫師](https://jerryortho.com/#about)：台中榮民總醫院骨科專科訓練，足踝、脊椎、關節重建、運動醫學背景
-
-## 衛教文章
-
-- [衛教文章總覽](https://jerryortho.com/articles/)：骨科與復健相關衛教知識
-
-## Optional
-
-- [常見問題](https://jerryortho.com/#faq)：病患常見疑問解答（含 FAQPage Schema）
-- [交通資訊與門診時間](https://jerryortho.com/#info)：高雄市鳳山區文龍東路136號，07-733-0409
+- [膝蓋痛：退化性膝關節炎](https://jerryortho.com/articles/knee-osteoarthritis.html)：膝蓋退化的原因、何時就醫、PRP／羊膜／玻尿酸怎麼選
+- [膝蓋腫脹、積水：膝關節積液](https://jerryortho.com/articles/knee-effusion.html)：積水原因、水會不會越抽越多、抽完之後怎麼處理
+- [肩膀痛：五十肩](https://jerryortho.com/articles/frozen-shoulder.html)：五十肩的分期、在家運動、類固醇／關節囊擴張／PRP
+- [肩膀痛、沒力：旋轉肌撕裂](https://jerryortho.com/articles/rotator-cuff-tear.html)：與五十肩的差別、撕裂分級、要不要開刀
+- [腳踝扭傷](https://jerryortho.com/articles/ankle-sprain.html)：翻船後要不要照X光、多久會好、為什麼會變成習慣性扭傷
+- [手肘外側痛：網球肘](https://jerryortho.com/articles/tennis-elbow.html)：網球肘的診斷，復健、震波、增生治療與 PRP 怎麼選
+- [衛教文章總覽](https://jerryortho.com/articles/)

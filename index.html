@@ -217,8 +217,19 @@ section { padding: 7rem 0; }
 .td-time-sub { font-size: 0.8rem; color: var(--text-light); font-weight: 400; margin-top: 3px; }
 .dot-open { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--navy); }
 .dot-close { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--cream); border: 1px solid var(--border); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .bar-open { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--gold); }
 .bar-close { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--cream); border: 1px solid var(--border); }
+.book-actions { display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.book-btn { flex: 1 1 140px; text-align: center; padding: 0.9rem 1rem; font-size: 1.15rem; font-weight: 500; letter-spacing: 0.06em; text-decoration: none; border-radius: 4px; transition: opacity 0.2s, transform 0.2s; }
+.book-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.book-btn-primary { background: var(--navy); color: #fff; }
+.book-btn-line { background: #06C755; color: #fff; }
+.line-qr { display: flex; align-items: center; gap: 1rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.line-qr svg { flex-shrink: 0; background: #fff; }
+.line-qr-text { font-size: 1rem; line-height: 1.7; color: var(--text-mid); }
+@media (max-width: 768px) { .line-qr { display: none; } }
+.schedule-summary { margin-top: 1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); }
 .schedule-legend { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap; }
 .legend-item { display: flex; align-items: center; gap: 8px; font-size: 1.3rem; color: var(--text-light); }
 .info-card { background: var(--cream); padding: 2rem; border-radius: 2px; border: 1px solid var(--border); margin-bottom: 1rem; }
@@ -327,9 +338,9 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
       "name": "杰立骨科診所",
       "alternateName": "Jerry Ortho Clinic",
       "url": "https://jerryortho.com",
-      "logo": "https://jerryortho.com/logo.png",
+      "logo": "https://jerryortho.com/Logo.png",
       "image": "https://jerryortho.com/clinic-injection.jpg",
-      "description": "杰立骨科診所，前台中榮總骨科主治醫師唐士杰院長主持，專精超音波導引注射、PRP增生治療、羊膜基質再生治療、體外震波、骨質疏鬆篩檢與治療。高雄鳳山，提供醫學中心等級的骨科診療。",
+      "description": "杰立骨科診所，前台中榮總骨科主治醫師唐士杰院長主持，專精超音波導引注射、PRP增生治療、羊膜基質再生治療、體外震波、骨質疏鬆篩檢與治療。高雄鳳山，提供醫學中心等級的骨科診療。醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。",
       "telephone": "+886-7-733-0409",
       "address": {
         "@type": "PostalAddress",
@@ -347,25 +358,41 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
           "opens": "08:00",
           "closes": "12:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
           "opens": "14:00",
           "closes": "21:30"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Saturday"],
+          "dayOfWeek": [
+            "Saturday"
+          ],
           "opens": "08:00",
           "closes": "12:00"
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/jerryorthoclinic"
+        "https://www.facebook.com/jerryorthoclinic",
+        "https://pinmed.co/clinic/v1vmxzuk",
+        "https://lin.ee/QGhrTQt"
       ],
       "medicalSpecialty": [
         "Orthopedic Surgery",
@@ -410,7 +437,24 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
         }
       ],
       "hasMap": "https://maps.google.com/?q=高雄市鳳山區文龍東路136號",
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "isAcceptingNewPatients": true,
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "線上掛號",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://pinmed.co/clinic/v1vmxzuk?openAppointment=true",
+          "actionPlatform": [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "杰立骨科診所門診掛號"
+        }
+      }
     },
     {
       "@type": "Physician",
@@ -445,11 +489,69 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
           "@type": "Hospital",
           "name": "台中榮民總醫院"
         }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Thursday"
+          ],
+          "opens": "14:30",
+          "closes": "17:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "opens": "18:30",
+          "closes": "21:00"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "杰立骨科診所可以線上掛號嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。杰立骨科診所提供 PinMed 網路掛號，可以直接線上預約：https://pinmed.co/clinic/v1vmxzuk?openAppointment=true。也可以加入杰立骨科 LINE 官方帳號（https://lin.ee/QGhrTQt），從選單點「線上掛號」，或來電 07-733-0409 預約。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "唐士杰醫師什麼時候有門診？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。可線上掛號或來電 07-733-0409 預約。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "杰立骨科診所的復健時間是什麼時候？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。復健時段即為診所營業時間。"
+          }
+        },
         {
           "@type": "Question",
           "name": "高雄哪裡可以打PRP？",
@@ -527,7 +629,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   <ul class="nav-links">
     <li><a href="#about">關於院長</a></li>
     <li class="nav-dropdown">
-      <a href="#treatments" class="nav-dropdown-trigger">治療項目 ▾</a>
+      <a href="/articles/" class="nav-dropdown-trigger">治療項目 ▾</a>
       <ul class="nav-dropdown-menu">
         <li><a href="/articles/ultrasound-injection.html">超音波導引注射</a></li>
         <li><a href="/articles/prp-treatment.html">PRP 增生治療</a></li>
@@ -540,7 +642,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
     <li><a href="/articles/pricing.html">費用說明</a></li>
     <li><a href="/articles/">衛教文章</a></li>
     <li><a href="#info">看診資訊</a></li>
-    <li><a href="tel:077330409" class="nav-cta">立即預約</a></li>
+    <li><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" class="nav-cta" target="_blank" rel="noopener noreferrer">線上掛號</a></li>
   </ul>
   <button class="hamburger" onclick="toggleMenu()" aria-label="選單">
     <span></span><span></span><span></span>
@@ -555,7 +657,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
     <p class="hero-subtitle">前台中榮總骨科主治醫師・唐士杰院長</p>
     <p class="hero-sub">不用跑大醫院，享有同等級的骨科診療。從精準診斷到再生治療，我們陪你找出問題、評估選項，一起決定下一步。</p>
     <div class="hero-btns">
-      <a href="#treatments" class="btn-primary">了解治療項目</a>
+      <a href="/articles/" class="btn-primary">了解治療項目</a>
       <a href="#about" class="btn-secondary">認識院長</a>
     </div>
     <div class="hero-services">
@@ -673,22 +775,23 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
             <tbody>
               <tr>
                 <td><div class="td-time">上午</div><div class="td-time-sub">09:00–12:00</div></td>
-                <td><span class="dot-open"></span></td><td><span class="dot-open"></span></td><td><span class="dot-open"></span></td><td><span class="dot-open"></span></td><td><span class="dot-open"></span></td><td><span class="dot-open"></span></td>
+                <td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td>
               </tr>
               <tr>
                 <td><div class="td-time">下午</div><div class="td-time-sub">14:30–17:30</div></td>
-                <td><span class="dot-close"></span></td><td><span class="dot-open"></span></td><td><span class="dot-close"></span></td><td><span class="dot-open"></span></td><td><span class="dot-close"></span></td><td><span class="dot-close"></span></td>
+                <td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
               </tr>
               <tr>
                 <td><div class="td-time">晚上</div><div class="td-time-sub">18:30–21:00</div></td>
-                <td><span class="dot-open"></span></td><td><span class="dot-close"></span></td><td><span class="dot-open"></span></td><td><span class="dot-close"></span></td><td><span class="dot-open"></span></td><td><span class="dot-close"></span></td>
+                <td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
               </tr>
             </tbody>
           </table>
           <div class="schedule-legend">
-            <div class="legend-item"><span class="dot-open"></span>看診</div>
-            <div class="legend-item"><span class="dot-close"></span>休診</div>
+            <div class="legend-item"><span class="dot-open"><span class="sr-only">看診</span></span>看診</div>
+            <div class="legend-item"><span class="dot-close"><span class="sr-only">休診</span></span>休診</div>
           </div>
+          <p class="schedule-summary">醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。</p>
         </div>
         <div class="schedule-section">
           <div class="schedule-label">復健時段</div>
@@ -699,18 +802,19 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
             <tbody>
               <tr>
                 <td><div class="td-time">上午</div><div class="td-time-sub">08:00–12:00</div></td>
-                <td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td>
+                <td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td>
               </tr>
               <tr>
                 <td><div class="td-time">下午</div><div class="td-time-sub">14:00–21:30</div></td>
-                <td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-open"></span></td><td><span class="bar-close"></span></td>
+                <td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-open"><span class="sr-only">開放</span></span></td><td><span class="bar-close"><span class="sr-only">休息</span></span></td>
               </tr>
             </tbody>
           </table>
           <div class="schedule-legend">
-            <div class="legend-item"><span class="bar-open"></span>開放</div>
-            <div class="legend-item"><span class="bar-close"></span>休息</div>
+            <div class="legend-item"><span class="bar-open"><span class="sr-only">開放</span></span>開放</div>
+            <div class="legend-item"><span class="bar-close"><span class="sr-only">休息</span></span>休息</div>
           </div>
+          <p class="schedule-summary">復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。</p>
         </div>
       </div>
       <div class="reveal">
@@ -719,6 +823,14 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
           <div class="info-item"><span>📍</span><span>高雄市鳳山區文龍東路136號</span></div>
           <div class="info-item"><span>📞</span><a href="tel:077330409" style="color:var(--navy);text-decoration:none;font-weight:500;">07-733-0409</a></div>
           <div class="info-item"><span>🅿️</span><span>診所附近有路邊停車位</span></div>
+          <div class="book-actions">
+            <a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" class="book-btn book-btn-primary" target="_blank" rel="noopener noreferrer">線上掛號</a>
+            <a href="https://lin.ee/QGhrTQt" class="book-btn book-btn-line" target="_blank" rel="noopener noreferrer">加入 LINE</a>
+          </div>
+          <div class="line-qr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="132" height="132" role="img" aria-label="杰立骨科 LINE 官方帳號 QR Code" class="segno"><path class="qrline" stroke="#1a2744" d="M2 2.5h7m1 0h1m1 0h1m1 0h1m1 0h1m3 0h7m-25 1h1m5 0h1m3 0h2m4 0h1m1 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m1 0h3m2 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h1m1 0h3m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h2m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m1 0h1m1 0h4m2 0h1m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-14 1h1m-12 1h1m1 0h1m3 0h2m1 0h1m2 0h2m1 0h1m3 0h1m2 0h1m1 0h1m-23 1h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m-25 1h1m1 0h1m2 0h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h4m1 0h1m-24 1h3m1 0h1m2 0h1m1 0h2m3 0h3m1 0h3m-20 1h1m2 0h2m2 0h5m2 0h1m1 0h2m4 0h1m-24 1h1m1 0h3m2 0h3m1 0h1m1 0h2m2 0h2m3 0h2m-25 1h2m2 0h1m1 0h1m2 0h2m1 0h4m5 0h2m1 0h1m-23 1h3m2 0h1m3 0h2m1 0h1m1 0h1m1 0h4m-22 1h3m1 0h1m1 0h1m1 0h1m1 0h1m4 0h6m2 0h1m-16 1h2m4 0h1m1 0h1m3 0h1m3 0h1m-25 1h7m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m3 0h1m4 0h2m3 0h1m3 0h1m-25 1h1m1 0h3m1 0h1m2 0h12m3 0h1m-25 1h1m1 0h3m1 0h1m5 0h1m2 0h1m4 0h1m1 0h2m-24 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h3m1 0h2m-25 1h1m5 0h1m3 0h3m3 0h5m-21 1h7m1 0h2m2 0h3m1 0h2m3 0h1m2 0h1"/></svg>
+            <div class="line-qr-text">手機掃描加入 LINE<br>選單也能線上掛號</div>
+          </div>
         </div>
         <div style="margin-top:1rem; border-radius:2px; overflow:hidden; border:1px solid var(--border);"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.3361153371243!2d120.37114280000002!3d22.6412535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1b6dc6578727%3A0xc6dc11d93474a201!2z5p2w56uL6aqo56eR6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1778567798686!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </div>
@@ -733,9 +845,10 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   <div class="cta-inner reveal">
     <div class="cta-pre">預約看診</div>
     <h2 class="cta-title">不確定要不要手術？先來聊聊。</h2>
-    <p class="cta-sub">歡迎來診所讓唐醫師仔細評估，找出問題真正的所在。</p>
+    <p class="cta-sub">歡迎來診所讓唐醫師仔細評估，找出問題真正的所在。可以線上掛號，也可以直接來電預約。</p>
     <div class="cta-btns">
-      <a href="tel:077330409" class="btn-primary">📞 立即來電預約</a>
+      <a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" class="btn-primary" target="_blank" rel="noopener noreferrer">🗓️ 線上掛號</a>
+      <a href="tel:077330409" class="btn-secondary">📞 來電預約</a>
       <a href="#info" class="btn-secondary">查看看診時間</a>
     </div>
     <a href="tel:077330409" class="cta-tel">07 — 733 — 0409</a>
@@ -749,8 +862,9 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
       <div class="footer-logo">杰立<span>骨科</span>診所</div>
       <div class="footer-info">高雄市鳳山區文龍東路136號<br>唐士杰 院長・骨科專科醫師・前台中榮總主治醫師</div>
       <a href="https://www.facebook.com/jerryorthoclinic" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:0.85rem; font-size:0.9rem; color:rgba(255,255,255,0.5); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#d4b07a'" onmouseout="this.style.color='rgba(255,255,255,0.5)'"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>杰立骨科診所 Facebook</a>
+      <a href="https://lin.ee/QGhrTQt" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:0.85rem; margin-left:1.25rem; font-size:0.9rem; color:rgba(255,255,255,0.5); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#d4b07a'" onmouseout="this.style.color='rgba(255,255,255,0.5)'"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>杰立骨科診所 LINE</a>
     </div>
-    <div class="footer-note">本網站提供之資訊僅供衛教參考，<br>實際診療請洽專業醫師評估。<br>© 2026 杰立骨科診所</div>
+    <div class="footer-note"><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" target="_blank" rel="noopener noreferrer" style="color:#d4b07a; text-decoration:none;">線上掛號</a>｜<a href="tel:077330409" style="color:#d4b07a; text-decoration:none;">07-733-0409</a><br><br>本網站提供之資訊僅供衛教參考，<br>實際診療請洽專業醫師評估。<br>© 2026 杰立骨科診所</div>
   </div>
 </footer>
 
