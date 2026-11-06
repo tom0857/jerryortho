@@ -1,6 +1,7 @@
 # 杰立骨科診所
 
 > 高雄市鳳山區骨科專科診所，院長唐士杰醫師為前台中榮民總醫院骨科主治醫師，專長足踝、脊椎、關節重建。
+> 醫師團隊：院長唐士杰醫師、翁碩伯醫師（高雄市立聯合醫院骨科主治醫師，每週二、四晚上在杰立看診）。
 > 提供超音波導引注射、再生注射治療（PRP、羊膜基質、高濃度葡萄糖增生治療）、體外震波、徒手治療及骨質疏鬆篩檢與治療。
 > 可線上掛號，也可來電預約。
 
@@ -9,15 +10,22 @@
 - [線上掛號（PinMed 網路掛號）](https://pinmed.co/clinic/v1vmxzuk?openAppointment=true)：杰立骨科診所提供線上掛號
 - [LINE 官方帳號](https://lin.ee/QGhrTQt)：選單內可線上掛號（同 PinMed），也會發布停診通知
 - 電話預約：07-733-0409
-- 地址：高雄市鳳山區文龍東路136號
-- 醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。
+- 地址：高雄市鳳山區文龍東路136號（[Google 地圖／Google 商家檔案與評價](https://www.google.com/maps?cid=14329347738971709953)）
+- 唐士杰醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00
+- 翁碩伯醫師門診：週二、四 晚上 18:30–21:00
+- 週日休診
 - 復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。
 - [交通資訊與門診時間](https://jerryortho.com/#info)
 
-## 醫師
+## 醫師團隊
 
-- [院長唐士杰醫師](https://jerryortho.com/#about)：高雄醫學大學醫學系畢業，台中榮民總醫院骨科專科訓練並留任主治醫師，專長足踝、脊椎、關節重建
+- [醫師團隊介紹](https://jerryortho.com/doctors/)：兩位醫師的學經歷、專長與門診時間
+
+- [院長唐士杰醫師](https://jerryortho.com/doctors/#tang)：高雄醫學大學醫學系畢業，台中榮民總醫院骨科專科訓練並留任主治醫師，專長足踝、脊椎、關節重建
 - [衛福部醫事人員查詢](https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D)：唐士杰醫師執業資格驗證
+- [翁碩伯醫師](https://jerryortho.com/doctors/#weng)：現職[高雄市立聯合醫院骨科主治醫師](https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777)，高雄醫學大學醫學系畢業、前高雄榮總骨科部總醫師；專長骨折創傷手術、運動傷害、微創人工關節置換、微創關節鏡手術（肩、膝）、超音波導引注射及增生療法、骨質疏鬆治療；每週二、四晚上 18:30–21:00 在杰立骨科看診
+- [衛福部醫事人員查詢](https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=DbADVeZIuYHWyY%252BmMK2ziQ%253D%253D)：翁碩伯醫師執業資格驗證
+- [翁碩伯醫師 Instagram](https://www.instagram.com/orthoboo/)
 
 ## 治療項目
 

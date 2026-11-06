@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>醫師團隊｜唐士杰院長・翁碩伯醫師｜杰立骨科診所（高雄鳳山）</title>
+<meta name="description" content="高雄鳳山杰立骨科診所醫師團隊。院長唐士杰醫師：前台中榮總骨科主治醫師，專長足踝、脊椎、關節重建；翁碩伯醫師：高雄市立聯合醫院骨科主治醫師，專長骨折創傷、運動傷害、關節鏡與人工關節。學經歷、專長與門診時間。">
+<meta name="author" content="杰立骨科診所">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="醫師團隊｜杰立骨科診所">
+<meta property="og:description" content="院長唐士杰醫師、翁碩伯醫師的學經歷、專長與門診時間。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jerryortho.com/doctors/">
+<meta property="og:image" content="https://jerryortho.com/about-main.jpg">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="杰立骨科診所">
+<link rel="canonical" href="https://jerryortho.com/doctors/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a2744;
+  --navy-light: #253558;
+  --gold: #b8965a;
+  --gold-light: #d4b07a;
+  --cream: #f8f5f0;
+  --warm-white: #fdfcfa;
+  --text-dark: #1e1e1e;
+  --text-mid: #4a4a4a;
+  --text-light: #7a7a7a;
+  --border: rgba(26,39,68,0.1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--text-dark); background: var(--warm-white);
+  line-height: 1.75; overflow-x: hidden; font-size: 20px;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 2.5rem; height: 72px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(253,252,250,0.95); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 2px 28px rgba(26,39,68,0.07); }
+.nav-logo { font-family: 'Noto Sans TC', sans-serif; font-size: 1.3rem; font-weight: 500; color: var(--navy); letter-spacing: 0.05em; text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 1.3rem; letter-spacing: 0.04em; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-cta { font-size: 1.3rem; font-weight: 500; background: var(--navy); color: #fff !important; padding: 0.55rem 1.25rem; border-radius: 2px; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--navy-light) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { width: 24px; height: 1.5px; background: var(--navy); display: block; }
+
+/* ── HERO ── */
+#hero {
+  height: calc(100vh - 0px); min-height: 600px; display: grid; grid-template-columns: 1fr 1fr;
+  padding-top: 72px; background: var(--cream); position: relative; overflow: hidden;
+}
+.hero-left {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 5rem 3.5rem 5rem 5rem; position: relative; z-index: 1;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.3rem; letter-spacing: 0.16em; color: var(--gold);
+  margin-bottom: 1.75rem; font-weight: 400;
+}
+.hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+.hero-title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  font-weight: 400; line-height: 1.3;
+  color: var(--navy); margin-bottom: 1rem; letter-spacing: 0.02em;
+}
+.hero-subtitle {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.25rem; color: var(--text-light);
+  letter-spacing: 0.08em; margin-bottom: 1.75rem; font-weight: 300;
+}
+.hero-sub {
+  font-size: 1.25rem; color: var(--text-mid);
+  max-width: 460px; margin-bottom: 2.75rem; line-height: 1.9;
+}
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--navy); color: #fff; padding: 1rem 2.25rem; font-size: 1.3rem; letter-spacing: 0.06em; text-decoration: none; border-radius: 2px; transition: background 0.2s, transform 0.2s; display: inline-block; }
+.btn-primary:hover { background: var(--navy-light); transform: translateY(-1px); }
+.btn-secondary { border: 1px solid var(--navy); color: var(--navy); padding: 1rem 2.25rem; font-size: 1.3rem; letter-spacing: 0.06em; text-decoration: none; border-radius: 2px; transition: background 0.2s; display: inline-block; }
+.btn-secondary:hover { background: rgba(26,39,68,0.05); }
+.hero-services { margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.hero-services-label { font-size: 1.3rem; letter-spacing: 0.12em; color: var(--text-light); text-transform: uppercase; margin-bottom: 1rem; }
+.hero-services-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.service-chip { font-size: 1.3rem; padding: 0.35rem 0.9rem; border: 1px solid rgba(184,150,90,0.35); color: var(--text-mid); border-radius: 1px; background: rgba(184,150,90,0.05); }
+.hero-right { position: relative; overflow: hidden; background: var(--navy); }
+.hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 1; }
+.hero-right::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 50%; z-index: 1; background: linear-gradient(to top, rgba(26,39,68,0.75), transparent); }
+.hero-img-overlay { position: absolute; bottom: 2.75rem; left: 2.75rem; z-index: 2; color: #fff; }
+.hero-img-overlay .clinic-name { font-family: 'Noto Sans TC', sans-serif; font-size: 1.3rem; font-weight: 400; }
+.hero-img-overlay .clinic-sub { font-size: 1.3rem; color: rgba(255,255,255,0.6); margin-top: 0.3rem; }
+
+/* ── CLINIC INTRO STRIP ── */
+#clinic-intro {
+  background: var(--navy); color: #fff;
+  padding: 4rem 0;
+}
+.clinic-intro-inner {
+  max-width: 1120px; margin: 0 auto; padding: 0 2.5rem;
+  display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2px;
+}
+.clinic-pillar {
+  padding: 2.5rem 2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.3s; position: relative;
+}
+.clinic-pillar::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  opacity: 0; transition: opacity 0.3s;
+}
+.clinic-pillar:hover { background: rgba(255,255,255,0.07); }
+.clinic-pillar:hover::before { opacity: 1; }
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: rgba(184,150,90,0.3); line-height: 1; margin-bottom: 1rem; }
+.pillar-title { font-family: 'Noto Sans TC', sans-serif; font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem; }
+.pillar-desc { font-size: 1.3rem; color: rgba(255,255,255,0.5); line-height: 1.75; }
+
+/* ── COMMON ── */
+section { padding: 7rem 0; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 2.5rem; }
+.section-tag { font-size: 1.3rem; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.6rem; }
+.section-tag::before { content: ''; width: 22px; height: 1px; background: var(--gold); }
+.section-title { font-family: 'Noto Sans TC', sans-serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 400; color: var(--navy); line-height: 1.35; margin-bottom: 1.25rem; letter-spacing: 0.02em; }
+.section-sub { font-size: 1.25rem; color: var(--text-mid); max-width: 580px; line-height: 1.9; }
+
+/* ── TREATMENTS ── */
+#treatments { background: var(--cream); }
+.treatments-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
+.treatment-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
+.treatment-card { background: var(--warm-white); padding: 2.75rem; position: relative; overflow: hidden; transition: box-shadow 0.3s; }
+.treatment-card:hover { box-shadow: 0 10px 40px rgba(26,39,68,0.09); z-index: 1; }
+.treatment-card::after { content: ''; position: absolute; bottom: 0; left: 2.75rem; right: 2.75rem; height: 1px; background: var(--gold); opacity: 0; transition: opacity 0.3s; }
+.treatment-card:hover::after { opacity: 1; }
+.treatment-icon { width: 52px; height: 52px; border-radius: 2px; background: var(--cream); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.4rem; }
+.treatment-name { font-family: 'Noto Sans TC', sans-serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 400; }
+.treatment-sub { font-size: 1.3rem; color: var(--gold); letter-spacing: 0.06em; margin-bottom: 1.1rem; }
+.treatment-desc { font-size: 1.3rem; color: var(--text-mid); line-height: 1.9; }
+.treatment-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.25rem; }
+.tag { font-size: 1.3rem; padding: 0.25rem 0.7rem; border: 1px solid var(--border); color: var(--text-light); border-radius: 1px; }
+.treatment-inquiry { margin-top: 1.35rem; padding-top: 1.1rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text-light); }
+
+/* ── ULTRASOUND ── */
+#ultrasound { background: var(--warm-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.us-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5.5rem; align-items: center; }
+.us-visual { border-radius: 2px; overflow: hidden; }
+.us-visual img { width: 100%; height: auto; display: block; }
+.us-points { list-style: none; margin-top: 2.25rem; }
+.us-point { display: flex; gap: 1rem; align-items: flex-start; padding: 1.2rem 0; border-bottom: 1px solid var(--border); }
+.us-point:first-child { border-top: 1px solid var(--border); }
+.us-point-icon { width: 36px; height: 36px; flex-shrink: 0; background: var(--cream); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-top: 0.1rem; }
+.us-point-text { font-size: 1.3rem; color: var(--text-mid); line-height: 1.75; }
+.us-point-text strong { color: var(--navy); display: block; margin-bottom: 0.25rem; font-weight: 500; font-size: 1.25rem; }
+
+/* ── ABOUT ── */
+#about { background: var(--cream); }
+.about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: center; }
+.about-img-wrap { position: relative; }
+.about-img-main { width: 100%; aspect-ratio: 3/4; border-radius: 2px; overflow: hidden; }
+.about-img-main img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.about-img-accent { position: absolute; right: -1.5rem; bottom: -1.5rem; width: 50%; aspect-ratio: 1; border: 8px solid var(--cream); border-radius: 2px; overflow: hidden; }
+.about-img-accent img { width: 100%; height: 100%; object-fit: cover; }
+.about-content { }
+.dr-credential { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.dr-credential span { font-size: 1.3rem; padding: 0.3rem 0.8rem; border: 1px solid var(--border); color: var(--text-mid); border-radius: 1px; }
+.about-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-style: italic; color: var(--navy); line-height: 1.5; padding-left: 1.5rem; border-left: 2px solid var(--gold); margin: 2rem 0 1.75rem; }
+.about-body { font-size: 1.25rem; color: var(--text-mid); line-height: 1.95; margin-bottom: 1.1rem; }
+.about-body strong { color: var(--navy); font-weight: 500; }
+.training-list { margin-top: 2.5rem; }
+.training-title { font-size: 1.3rem; letter-spacing: 0.12em; color: var(--text-light); text-transform: uppercase; margin-bottom: 1.25rem; }
+.training-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.training-item:first-of-type { border-top: 1px solid var(--border); }
+.training-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); margin-top: 0.6rem; flex-shrink: 0; }
+.training-text { font-size: 1.3rem; color: var(--text-mid); line-height: 1.65; }
+.training-text strong { color: var(--navy); font-weight: 500; display: block; margin-bottom: 0.15rem; }
+
+/* ── 醫師團隊 ── */
+.team-head { max-width: 760px; margin-bottom: 3.5rem; }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.team-card { display: grid; grid-template-columns: 200px 1fr; gap: 1.75rem; background: var(--warm-white, #fdfcfa); border: 1px solid var(--border); border-radius: 2px; padding: 1.5rem; align-items: start; }
+.team-photo { display: block; }
+.team-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: 2px; display: block; }
+.team-role { font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 0.4rem; }
+.team-name { font-family: 'Noto Sans TC', sans-serif; font-size: 1.8rem; font-weight: 400; color: var(--navy); margin-bottom: 0.6rem; }
+.team-name a { color: inherit; text-decoration: none; }
+.team-title { font-size: 1.15rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1rem; }
+.team-title a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.team-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.1rem; }
+.team-tags span { font-size: 1.05rem; padding: 0.2rem 0.65rem; border: 1px solid var(--border); color: var(--text-mid); }
+.team-more { font-size: 1.15rem; color: var(--navy); font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--gold); }
+.team-cta { margin-top: 2.5rem; text-align: center; }
+@media (max-width: 960px) { .team-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .team-card { grid-template-columns: 120px 1fr; gap: 1.1rem; padding: 1.1rem; } .team-name { font-size: 1.5rem; } .team-tags span { font-size: 0.95rem; } }
+
+/* ── OSTEOPOROSIS ── */
+#osteoporosis { background: linear-gradient(160deg, #1a2744 0%, #253558 100%); color: #fff; position: relative; overflow: hidden; }
+#osteoporosis::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,90,0.07), transparent 70%); pointer-events: none; }
+.osteo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5.5rem; align-items: center; }
+.osteo-tag { color: var(--gold-light); }
+.osteo-tag::before { background: var(--gold-light); }
+.osteo-features { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.1rem; }
+.osteo-feature { display: flex; gap: 1rem; align-items: flex-start; padding: 1.4rem 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; }
+.osteo-feature-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+.osteo-feature-text { font-size: 1.3rem; color: rgba(255,255,255,0.72); line-height: 1.75; }
+.osteo-feature-text strong { color: #fff; display: block; font-weight: 500; margin-bottom: 0.25rem; font-size: 1.25rem; }
+.osteo-visual { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; padding: 3.5rem; text-align: center; }
+.osteo-stat-big { font-family: 'Cormorant Garamond', serif; font-size: 6rem; font-weight: 300; color: var(--gold-light); line-height: 1; }
+.osteo-stat-label { font-size: 1.25rem; color: rgba(255,255,255,0.5); margin-top: 0.5rem; line-height: 1.6; }
+.osteo-stat-divider { width: 40px; height: 1px; background: rgba(255,255,255,0.2); margin: 2rem auto; }
+.osteo-stat-note { font-size: 1.25rem; color: rgba(255,255,255,0.55); line-height: 1.8; }
+
+/* ── INFO ── */
+#info { background: var(--warm-white); }
+.info-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; }
+.schedule-section { margin-bottom: 3rem; }
+.schedule-label { font-size: 1.3rem; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+.schedule-label::before { content: ''; width: 16px; height: 1px; background: var(--gold); }
+.schedule-table { width: 100%; border-collapse: collapse; }
+.schedule-table th { font-size: 1.3rem; font-weight: 500; color: var(--text-light); padding: 0.7rem 0; border-bottom: 1px solid var(--border); text-align: center; letter-spacing: 0.04em; }
+.schedule-table th:first-child { text-align: left; width: 130px; }
+.schedule-table td { padding: 0.9rem 0; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+.schedule-table td:first-child { text-align: left; }
+.td-time { font-size: 1.25rem; font-weight: 500; color: var(--navy); line-height: 1.2; }
+.td-time-sub { font-size: 0.8rem; color: var(--text-light); font-weight: 400; margin-top: 3px; }
+.dot-open { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--navy); }
+.dot-close { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--cream); border: 1px solid var(--border); }
+.doc-mark { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; color: #fff; font-size: 1.1rem; font-weight: 500; line-height: 1; }
+.doc-tang { background: var(--navy); }
+.doc-weng { background: var(--gold); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.bar-open { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--gold); }
+.bar-close { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--cream); border: 1px solid var(--border); }
+.book-actions { display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.book-btn { flex: 1 1 140px; text-align: center; padding: 0.9rem 1rem; font-size: 1.15rem; font-weight: 500; letter-spacing: 0.06em; text-decoration: none; border-radius: 4px; transition: opacity 0.2s, transform 0.2s; }
+.book-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.book-btn-primary { background: var(--navy); color: #fff; }
+.book-btn-line { background: #06C755; color: #fff; }
+.line-qr { display: flex; align-items: center; gap: 1rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.line-qr svg { flex-shrink: 0; background: #fff; }
+.line-qr-text { font-size: 1rem; line-height: 1.7; color: var(--text-mid); }
+@media (max-width: 768px) { .line-qr { display: none; } }
+.schedule-summary { margin-top: 1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); }
+.schedule-legend { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: nowrap; white-space: nowrap; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 1.3rem; color: var(--text-light); }
+.info-card { background: var(--cream); padding: 2rem; border-radius: 2px; border: 1px solid var(--border); margin-bottom: 1rem; }
+.info-card-title { font-size: 1.3rem; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.1rem; }
+.info-item { display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1.3rem; color: var(--text-mid); margin-bottom: 0.9rem; line-height: 1.65; }
+.info-item:last-child { margin-bottom: 0; }
+.map-placeholder { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.3); font-size: 1.25rem; margin-top: 1rem; }
+
+/* ── CTA ── */
+#cta { background: var(--cream); text-align: center; padding: 8rem 0; border-top: 1px solid var(--border); }
+.cta-inner { max-width: 100%; margin: 0 auto; padding: 0 2.5rem; }
+.cta-pre { font-size: 1.3rem; letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.1rem; }
+.cta-title { font-family: 'Noto Sans TC', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 1.35rem; font-weight: 400; line-height: 1.4; }
+.cta-sub { font-size: 1.25rem; color: var(--text-mid); margin-bottom: 2.75rem; line-height: 1.9; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.cta-tel { font-size: 1.9rem; font-weight: 300; color: var(--navy); font-family: 'Cormorant Garamond', serif; letter-spacing: 0.08em; display: block; margin: 1.75rem 0 0; text-decoration: none; transition: color 0.2s; }
+.cta-tel:hover { color: var(--gold); }
+
+/* ── FOOTER ── */
+footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 0; }
+.footer-inner { max-width: 1120px; margin: 0 auto; padding: 0 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+.footer-logo { font-family: 'Noto Sans TC', sans-serif; font-size: 1.25rem; color: rgba(255,255,255,0.8); letter-spacing: 0.05em; }
+.footer-logo span { color: var(--gold-light); }
+.footer-info { font-size: 0.9rem; line-height: 1.8; margin-top: 0.5rem; }
+.footer-note { font-size: 1.3rem; color: rgba(255,255,255,0.3); line-height: 1.75; text-align: right; }
+
+
+/* ── DROPDOWN ── */
+.nav-dropdown { position: relative; }
+.nav-dropdown-trigger { cursor: pointer; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%);
+  background: rgba(253,252,250,0.98);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(26,39,68,0.12);
+  list-style: none;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 200;
+  margin-top: 8px;
+}
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute; top: -6px; left: 50%;
+  transform: translateX(-50%);
+  width: 12px; height: 12px;
+  background: rgba(253,252,250,0.98);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: translateX(-50%) rotate(45deg);
+}
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.nav-dropdown-menu li a:hover {
+  background: var(--cream);
+  color: var(--navy);
+}
+.nav-dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  body { font-size: 18px; }
+  nav { height: 64px; padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  #hero { grid-template-columns: 1fr; }
+  .hero-left { padding: 3.5rem 1.5rem 3rem; }
+  .hero-right { min-height: 360px; }
+  .clinic-intro-inner { grid-template-columns: 1fr 1fr; }
+  .about-grid, .treatments-intro, .us-grid, .osteo-grid, .info-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .treatment-cards { grid-template-columns: 1fr; }
+  .about-img-wrap { max-width: 360px; }
+  section { padding: 5rem 0; }
+  #clinic-intro { padding: 3rem 0; }
+  #cta { padding: 5.5rem 0; }
+  .footer-note { text-align: left; }
+}
+@media (max-width: 600px) {
+  .schedule-table th { font-size: 0.95rem; letter-spacing: 0; }
+  .schedule-table th:first-child { width: 92px; }
+  .doc-mark { width: 30px; height: 30px; font-size: 1rem; }
+  .schedule-legend { gap: 0.8rem; }
+  .legend-item { font-size: 0.95rem; gap: 5px; }
+  .legend-item .doc-mark, .legend-item .dot-open, .legend-item .dot-close { width: 24px; height: 24px; font-size: 0.85rem; }
+  .schedule-table th:first-child + th, .schedule-table th { white-space: nowrap; }
+}
+</style>
+<style>
+.nw { white-space: nowrap; }
+.page-head { padding: 9.5rem 0 1rem; background: var(--cream); }
+.page-head h1 { font-family: 'Noto Sans TC', sans-serif; font-size: clamp(2.2rem, 3.5vw, 3rem); font-weight: 400; color: var(--navy); margin-bottom: 1rem; }
+.page-head p { font-size: 1.25rem; color: var(--text-mid); line-height: 1.9; max-width: 760px; }
+.breadcrumb { font-size: 1.05rem; color: var(--text-light); margin-bottom: 1.5rem; }
+.breadcrumb a { color: var(--text-light); }
+.doc-section { background: var(--cream); padding: 5rem 0; scroll-margin-top: 72px; }
+.doc-section .about-grid { align-items: start; }
+.doc-section + .doc-section { border-top: 1px solid var(--border); }
+.doc-current { font-size: 1.3rem; color: var(--text-mid); margin: -0.25rem 0 1.25rem; }
+.doc-current a, .u-link { color: var(--navy) !important; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.doc-time { margin-top: 2rem; padding: 1.25rem 1.5rem; background: #fff; border-left: 3px solid var(--gold); font-size: 1.25rem; color: var(--text-mid); line-height: 1.85; }
+.doc-time strong { display: block; color: var(--navy); font-weight: 500; margin-bottom: 0.3rem; }
+.doc-links { display: flex; gap: 1.75rem; flex-wrap: wrap; margin-top: 1.25rem; font-size: 1.2rem; }
+.doc-links a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.doc-cta { text-align: center; padding: 4rem 0 5rem; background: var(--cream); border-top: 1px solid var(--border); }
+.doc-cta .btn-primary, .doc-cta .btn-secondary { margin: 0.4rem; }
+@media (max-width: 960px) { .page-head { padding-top: 7rem; } .doc-section { padding: 3.5rem 0; } }
+@media (max-width: 600px) { .cert { font-size: 1.08rem; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://jerryortho.com/doctors/#webpage",
+      "url": "https://jerryortho.com/doctors/",
+      "name": "醫師團隊｜杰立骨科診所",
+      "inLanguage": "zh-TW",
+      "description": "高雄鳳山杰立骨科診所醫師團隊：院長唐士杰醫師、翁碩伯醫師的學經歷、專長與門診時間。",
+      "about": {
+        "@id": "https://jerryortho.com/#clinic"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://jerryortho.com/#physician"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://jerryortho.com/#physician-weng"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://jerryortho.com/#clinic",
+      "name": "杰立骨科診所",
+      "url": "https://jerryortho.com",
+      "telephone": "+886-7-733-0409",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "文龍東路136號",
+        "addressLocality": "鳳山區",
+        "addressRegion": "高雄市",
+        "postalCode": "830",
+        "addressCountry": "TW"
+      },
+      "employee": [
+        {
+          "@id": "https://jerryortho.com/#physician"
+        },
+        {
+          "@id": "https://jerryortho.com/#physician-weng"
+        }
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://jerryortho.com/#physician",
+      "name": "唐士杰",
+      "givenName": "士杰",
+      "familyName": "唐",
+      "jobTitle": "骨科專科醫師・院長",
+      "description": "前台中榮民總醫院骨科主治醫師，高雄醫學大學醫學系畢業，專攻足踝專科、脊椎專科、關節重建、骨折創傷與運動醫學。",
+      "medicalSpecialty": "Orthopedic Surgery",
+      "sameAs": [
+        "https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D",
+        "https://www.facebook.com/jerryortho"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "專科醫師證書",
+          "name": "中華民國骨科專科醫師證書",
+          "url": "https://ma.mohw.gov.tw/"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://jerryortho.com/#clinic"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "高雄醫學大學"
+        },
+        {
+          "@type": "Hospital",
+          "name": "台中榮民總醫院"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Thursday"
+          ],
+          "opens": "14:30",
+          "closes": "17:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "opens": "18:30",
+          "closes": "21:00"
+        }
+      ],
+      "url": "https://jerryortho.com/doctors/#tang",
+      "image": "https://jerryortho.com/about-main.jpg"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://jerryortho.com/#physician-weng",
+      "name": "翁碩伯",
+      "alternateName": "Weng Shou-Po",
+      "givenName": "碩伯",
+      "familyName": "翁",
+      "jobTitle": "骨科主治醫師",
+      "url": "https://jerryortho.com/doctors/#weng",
+      "image": "https://jerryortho.com/dr-weng.jpg",
+      "description": "高雄市立聯合醫院骨科主治醫師，每週二、週四晚上（18:30–21:00）於杰立骨科診所看診。高雄醫學大學醫學系畢業，曾任高雄榮民總醫院骨科部總醫師。專長各式骨折創傷手術、一般骨科、運動傷害、微創人工關節置換手術、老年退化及骨質疏鬆治療、微創關節鏡手術（肩、膝關節等）、超音波導引注射及增生療法。",
+      "medicalSpecialty": "Orthopedic Surgery",
+      "sameAs": [
+        "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777",
+        "https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=DbADVeZIuYHWyY%252BmMK2ziQ%253D%253D",
+        "https://www.instagram.com/orthoboo/"
+      ],
+      "worksFor": [
+        {
+          "@id": "https://jerryortho.com/#clinic"
+        },
+        {
+          "@type": "Hospital",
+          "name": "高雄市立聯合醫院",
+          "url": "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777"
+        }
+      ],
+      "affiliation": {
+        "@type": "Hospital",
+        "name": "高雄市立聯合醫院",
+        "url": "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "高雄醫學大學"
+        },
+        {
+          "@type": "Hospital",
+          "name": "高雄榮民總醫院"
+        }
+      ],
+      "knowsAbout": [
+        "骨折創傷手術",
+        "一般骨科",
+        "運動傷害",
+        "微創人工關節置換手術",
+        "骨質疏鬆治療",
+        "微創關節鏡手術",
+        "超音波導引注射",
+        "增生療法"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Thursday"
+          ],
+          "opens": "18:30",
+          "closes": "21:00",
+          "validFrom": "2026-11-10"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "中華民國骨質疏鬆學會專科醫師認證"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AO 進階骨折訓練認證"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "台灣骨科創傷醫學會"
+        },
+        {
+          "@type": "Organization",
+          "name": "中華民國醫用超音波學會"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://jerryortho.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "醫師團隊",
+          "item": "https://jerryortho.com/doctors/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "唐士杰醫師什麼時候有門診？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "唐士杰醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。可線上掛號或來電 07-733-0409 預約。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "杰立骨科診所有哪些醫師？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "杰立骨科診所目前有兩位骨科醫師：院長唐士杰醫師（骨科專科醫師、前台中榮總骨科主治醫師，專長足踝、脊椎、關節重建）與翁碩伯醫師（高雄市立聯合醫院骨科主治醫師，專長骨折創傷、運動傷害、微創關節鏡與人工關節）。醫師完整介紹：https://jerryortho.com/doctors/"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "翁碩伯醫師什麼時候在杰立骨科看診？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "翁碩伯醫師為高雄市立聯合醫院骨科主治醫師，每週二、週四晚上 18:30–21:00 在杰立骨科診所看診。可線上掛號或來電 07-733-0409 預約。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="/" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;"><img src="https://jerryortho.com/Logo.png" alt="杰立骨科" style="height:36px; width:auto; display:block;">杰立骨科診所</a>
+  <ul class="nav-links">
+    <li><a href="/doctors/">醫師團隊</a></li>
+    <li class="nav-dropdown">
+      <a href="/articles/" class="nav-dropdown-trigger">治療項目 ▾</a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="/articles/ultrasound-injection.html">超音波導引注射</a></li>
+        <li><a href="/articles/prp-treatment.html">PRP 增生治療</a></li>
+        <li><a href="/articles/amniotic-matrix.html">羊膜基質再生治療</a></li>
+        <li><a href="/articles/prolotherapy.html">高濃度葡萄糖增生治療</a></li>
+        <li><a href="/articles/shockwave-therapy.html">體外震波治療</a></li>
+        <li><a href="/articles/osteoporosis-screening.html">骨質疏鬆篩檢與治療</a></li>
+      </ul>
+    </li>
+    <li><a href="/articles/pricing.html">費用說明</a></li>
+    <li><a href="/articles/">衛教文章</a></li>
+    <li><a href="/#info">看診資訊</a></li>
+    <li><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" class="nav-cta" target="_blank" rel="noopener noreferrer">線上掛號</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">首頁</a> ／ 醫師團隊</div>
+    <div class="section-tag">醫師團隊</div>
+    <h1>杰立骨科 醫師團隊</h1>
+    <p>杰立的醫師都在醫學中心完成骨科訓練，開過各式骨科手術。<br>我們讓影像說話，清楚解釋說明，尊重每個治療選擇。</p>
+  </div>
+</section>
+
+<section class="doc-section" id="tang">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-main">
+          <img src="/about-main.jpg" alt="唐士杰院長">
+        </div>
+        <div class="about-img-accent">
+          <img src="/about-accent.jpg" alt="唐士杰院長診間操作">
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-tag">院長</div>
+        <h2 class="section-title">唐士杰 醫師</h2>
+        <div class="dr-credential">
+          <span>骨科專科醫師</span>
+          <span>前台中榮總主治醫師</span>
+          <span>足踝專科</span>
+          <span>脊椎專科</span>
+          <span>關節重建</span>
+        </div>
+        <blockquote class="about-quote">「懂手術的人，<br>才知道什麼時候不需要手術。」</blockquote>
+        <p class="about-body">我是土生土長的高雄人，高雄醫學大學畢業後，在台中榮民總醫院完成骨科專科訓練，專攻足踝、脊椎與關節重建，並留任主治醫師。</p>
+        <p class="about-body">在醫院開過各式骨科手術，我比誰都清楚手術的時機，也清楚<strong>什麼時候其實不需要走到那一步</strong>。從醫學中心走到診所，我希望用這份骨科專業，幫助更多人恢復功能，重拾健康生活。</p>
+        <p class="about-body">在杰立，我們讓影像說話，清楚解釋說明，尊重每個治療選擇。</p>
+        <div class="training-list">
+          <div class="training-title">訓練軌跡</div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>高雄醫學大學 醫學系</strong>完整西醫醫學訓練，奠定臨床基礎</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong><a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D" target="_blank" rel="noopener noreferrer" style="color:var(--navy); text-decoration:underline; text-decoration-color:var(--gold); text-underline-offset:3px;">台中榮民總醫院 骨科部 專科訓練</a></strong>足踝專科・脊椎專科・關節重建・骨折創傷・運動醫學</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>台中榮民總醫院 骨科 主治醫師</strong>留任主治，累積豐富手術經驗</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>杰立骨科診所 創辦人・院長</strong>以手術等級的解剖知識，提供高雄病人精準的骨科診療</div>
+          </div>
+        </div>
+        <div class="doc-links"><a href="/#info">門診時間</a><a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D" target="_blank" rel="noopener noreferrer">衛福部醫師查詢</a><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" target="_blank" rel="noopener noreferrer">線上掛號</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doc-section" id="weng">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-main">
+          <img src="/dr-weng.jpg" alt="翁碩伯醫師" width="480" height="640">
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-tag">骨科主治醫師</div>
+        <h2 class="section-title">翁碩伯 醫師</h2>
+        <p class="doc-current">現職 <a href="https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&amp;sms=3AAAF95486579FCA&amp;s=F3C23FAD94480777" target="_blank" rel="noopener noreferrer">高雄市立聯合醫院 骨科主治醫師</a></p>
+        <div class="dr-credential">
+          <span>骨折創傷手術</span>
+          <span>運動傷害</span>
+          <span>微創人工關節</span>
+          <span>關節鏡手術</span>
+          <span>超音波導引注射</span>
+          <span>骨質疏鬆治療</span>
+        </div>
+        <p class="about-body">高雄醫學大學醫學系畢業，在高雄榮民總醫院骨科部完成住院醫師與總醫師訓練，現為高雄市立聯合醫院骨科主治醫師。</p>
+        <p class="about-body">臨床專長涵蓋各式骨折創傷手術、一般骨科與運動傷害，以及微創人工關節置換、肩膝關節鏡手術；也擅長老年退化與骨質疏鬆治療、超音波導引注射及增生療法。</p>
+        <div class="training-list">
+          <div class="training-title">學經歷</div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>高雄醫學大學 醫學系</strong>完整西醫醫學訓練</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>高雄榮民總醫院 骨科部</strong>住院醫師・總醫師</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong><a href="https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&amp;sms=3AAAF95486579FCA&amp;s=F3C23FAD94480777" target="_blank" rel="noopener noreferrer" class="u-link"><span class="nw">高雄市立聯合醫院</span> <span class="nw">骨科主治醫師</span></a></strong>現職</div>
+          </div>
+          <div class="training-item">
+            <div class="training-dot"></div>
+            <div class="training-text"><strong>專業認證</strong><span class="cert"><span class="nw">中華民國骨質疏鬆學會</span> <span class="nw">專科醫師認證</span><br><span class="nw">AO 進階骨折訓練認證</span><br><span class="nw">台灣骨科創傷醫學會</span> <span class="nw">會員</span><br><span class="nw">中華民國醫用超音波學會</span> <span class="nw">會員</span></span></div>
+          </div>
+        </div>
+        <div class="doc-links"><a href="/#info">門診時間</a><a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=DbADVeZIuYHWyY%252BmMK2ziQ%253D%253D" target="_blank" rel="noopener noreferrer">衛福部醫師查詢</a><a href="https://www.instagram.com/orthoboo/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" target="_blank" rel="noopener noreferrer">線上掛號</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doc-cta">
+  <div class="container">
+    <a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" class="btn-primary" target="_blank" rel="noopener noreferrer">線上掛號</a>
+    <a href="/#info" class="btn-secondary">看診時間與交通</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">杰立<span>骨科</span>診所</div>
+      <div class="footer-info">高雄市鳳山區文龍東路136號<br>唐士杰 院長・骨科專科醫師・前台中榮總主治醫師</div>
+      <a href="https://www.facebook.com/jerryorthoclinic" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:0.85rem; font-size:0.9rem; color:rgba(255,255,255,0.5); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#d4b07a'" onmouseout="this.style.color='rgba(255,255,255,0.5)'"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>杰立骨科診所 Facebook</a>
+      <a href="https://lin.ee/QGhrTQt" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:0.85rem; margin-left:1.25rem; font-size:0.9rem; color:rgba(255,255,255,0.5); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#d4b07a'" onmouseout="this.style.color='rgba(255,255,255,0.5)'"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>杰立骨科診所 LINE</a>
+    </div>
+    <div class="footer-note"><a href="https://pinmed.co/clinic/v1vmxzuk?openAppointment=true" target="_blank" rel="noopener noreferrer" style="color:#d4b07a; text-decoration:none;">線上掛號</a>｜<a href="tel:077330409" style="color:#d4b07a; text-decoration:none;">07-733-0409</a><br><br>本網站提供之資訊僅供衛教參考，<br>實際診療請洽專業醫師評估。<br>© 2026 杰立骨科診所</div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 90);
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+let menuOpen = false;
+function toggleMenu() {
+  menuOpen = !menuOpen;
+  const links = document.querySelector('.nav-links');
+  if (menuOpen) {
+    Object.assign(links.style, {
+      display: 'flex', flexDirection: 'column',
+      position: 'absolute', top: '72px', left: '0', right: '0',
+      background: 'rgba(253,252,250,0.98)', padding: '1.25rem 2.5rem 1.75rem',
+      borderBottom: '1px solid rgba(26,39,68,0.1)', backdropFilter: 'blur(16px)',
+      gap: '1.1rem', zIndex: '99'
+    });
+  } else { links.style.display = 'none'; }
+}
+</script>
+</body>
+</html>

@@ -185,6 +185,25 @@ section { padding: 7rem 0; }
 .training-text { font-size: 1.3rem; color: var(--text-mid); line-height: 1.65; }
 .training-text strong { color: var(--navy); font-weight: 500; display: block; margin-bottom: 0.15rem; }
 
+/* ── 醫師團隊 ── */
+.nw { white-space: nowrap; }
+.team-head { max-width: 760px; margin-bottom: 3.5rem; }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.team-card { display: grid; grid-template-columns: 200px 1fr; gap: 1.75rem; background: var(--warm-white, #fdfcfa); border: 1px solid var(--border); border-radius: 2px; padding: 1.5rem; align-items: start; }
+.team-photo { display: block; }
+.team-photo img { width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: 2px; display: block; }
+.team-role { font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 0.4rem; }
+.team-name { font-family: 'Noto Sans TC', sans-serif; font-size: 1.8rem; font-weight: 400; color: var(--navy); margin-bottom: 0.6rem; }
+.team-name a { color: inherit; text-decoration: none; }
+.team-title { font-size: 1.15rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1rem; }
+.team-title a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.team-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.1rem; }
+.team-tags span { font-size: 1.05rem; padding: 0.2rem 0.65rem; border: 1px solid var(--border); color: var(--text-mid); }
+.team-more { font-size: 1.15rem; color: var(--navy); font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--gold); }
+.team-cta { margin-top: 2.5rem; text-align: center; }
+@media (max-width: 960px) { .team-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .team-card { grid-template-columns: 105px 1fr; gap: 1rem; padding: 1rem; } .team-name { font-size: 1.45rem; } .team-title { font-size: 1rem; } .team-tags span { font-size: 0.9rem; padding: 0.15rem 0.5rem; } .team-head .section-title { font-size: 1.75rem; } }
+
 /* ── OSTEOPOROSIS ── */
 #osteoporosis { background: linear-gradient(160deg, #1a2744 0%, #253558 100%); color: #fff; position: relative; overflow: hidden; }
 #osteoporosis::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(184,150,90,0.07), transparent 70%); pointer-events: none; }
@@ -217,6 +236,9 @@ section { padding: 7rem 0; }
 .td-time-sub { font-size: 0.8rem; color: var(--text-light); font-weight: 400; margin-top: 3px; }
 .dot-open { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--navy); }
 .dot-close { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--cream); border: 1px solid var(--border); }
+.doc-mark { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; color: #fff; font-size: 1.1rem; font-weight: 500; line-height: 1; }
+.doc-tang { background: var(--navy); }
+.doc-weng { background: var(--gold); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .bar-open { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--gold); }
 .bar-close { display: inline-block; width: 30px; height: 8px; border-radius: 4px; background: var(--cream); border: 1px solid var(--border); }
@@ -230,7 +252,7 @@ section { padding: 7rem 0; }
 .line-qr-text { font-size: 1rem; line-height: 1.7; color: var(--text-mid); }
 @media (max-width: 768px) { .line-qr { display: none; } }
 .schedule-summary { margin-top: 1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); }
-.schedule-legend { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap; }
+.schedule-legend { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: nowrap; white-space: nowrap; }
 .legend-item { display: flex; align-items: center; gap: 8px; font-size: 1.3rem; color: var(--text-light); }
 .info-card { background: var(--cream); padding: 2rem; border-radius: 2px; border: 1px solid var(--border); margin-bottom: 1rem; }
 .info-card-title { font-size: 1.3rem; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.1rem; }
@@ -326,6 +348,15 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
   #cta { padding: 5.5rem 0; }
   .footer-note { text-align: left; }
 }
+@media (max-width: 600px) {
+  .schedule-table th { font-size: 0.95rem; letter-spacing: 0; }
+  .schedule-table th:first-child { width: 92px; }
+  .doc-mark { width: 30px; height: 30px; font-size: 1rem; }
+  .schedule-legend { gap: 0.6rem; }
+  .legend-item { font-size: 0.95rem; gap: 5px; }
+  .legend-item .doc-mark, .legend-item .dot-open, .legend-item .dot-close { width: 24px; height: 24px; font-size: 0.85rem; }
+  .schedule-table th:first-child + th, .schedule-table th { white-space: nowrap; }
+}
 </style>
 
 <script type="application/ld+json">
@@ -340,7 +371,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
       "url": "https://jerryortho.com",
       "logo": "https://jerryortho.com/Logo.png",
       "image": "https://jerryortho.com/clinic-injection.jpg",
-      "description": "杰立骨科診所，前台中榮總骨科主治醫師唐士杰院長主持，專精超音波導引注射、PRP增生治療、羊膜基質再生治療、體外震波、骨質疏鬆篩檢與治療。高雄鳳山，提供醫學中心等級的骨科診療。醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。",
+      "description": "杰立骨科診所，前台中榮總骨科主治醫師唐士杰院長主持，專精超音波導引注射、PRP增生治療、羊膜基質再生治療、體外震波、骨質疏鬆篩檢與治療。高雄鳳山，提供醫學中心等級的骨科診療。醫師門診：唐士杰醫師 週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00。翁碩伯醫師 週二、四 晚上 18:30–21:00。週日休診。復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。",
       "telephone": "+886-7-733-0409",
       "address": {
         "@type": "PostalAddress",
@@ -455,7 +486,15 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
           "@type": "Reservation",
           "name": "杰立骨科診所門診掛號"
         }
-      }
+      },
+      "employee": [
+        {
+          "@id": "https://jerryortho.com/#physician"
+        },
+        {
+          "@id": "https://jerryortho.com/#physician-weng"
+        }
+      ]
     },
     {
       "@type": "Physician",
@@ -524,6 +563,73 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
           "opens": "18:30",
           "closes": "21:00"
         }
+      ],
+      "url": "https://jerryortho.com/doctors/#tang",
+      "image": "https://jerryortho.com/about-main.jpg"
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://jerryortho.com/#physician-weng",
+      "name": "翁碩伯",
+      "alternateName": "Weng Shou-Po",
+      "givenName": "碩伯",
+      "familyName": "翁",
+      "jobTitle": "骨科主治醫師",
+      "url": "https://jerryortho.com/doctors/#weng",
+      "image": "https://jerryortho.com/dr-weng.jpg",
+      "description": "高雄市立聯合醫院骨科主治醫師，每週二、週四晚上（18:30–21:00）於杰立骨科診所看診。高雄醫學大學醫學系畢業，曾任高雄榮民總醫院骨科部總醫師。專長各式骨折創傷手術、一般骨科、運動傷害、微創人工關節置換手術、老年退化及骨質疏鬆治療、微創關節鏡手術（肩、膝關節等）、超音波導引注射及增生療法。",
+      "medicalSpecialty": "Orthopedic Surgery",
+      "sameAs": [
+        "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777",
+        "https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=DbADVeZIuYHWyY%252BmMK2ziQ%253D%253D",
+        "https://www.instagram.com/orthoboo/"
+      ],
+      "worksFor": [
+        {
+          "@id": "https://jerryortho.com/#clinic"
+        },
+        {
+          "@type": "Hospital",
+          "name": "高雄市立聯合醫院",
+          "url": "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777"
+        }
+      ],
+      "affiliation": {
+        "@type": "Hospital",
+        "name": "高雄市立聯合醫院",
+        "url": "https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&sms=3AAAF95486579FCA&s=F3C23FAD94480777"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "高雄醫學大學"
+        },
+        {
+          "@type": "Hospital",
+          "name": "高雄榮民總醫院"
+        }
+      ],
+      "knowsAbout": [
+        "骨折創傷手術",
+        "一般骨科",
+        "運動傷害",
+        "微創人工關節置換手術",
+        "骨質疏鬆治療",
+        "微創關節鏡手術",
+        "超音波導引注射",
+        "增生療法"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Thursday"
+          ],
+          "opens": "18:30",
+          "closes": "21:00",
+          "validFrom": "2026-11-10"
+        }
       ]
     },
     {
@@ -542,7 +648,23 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
           "name": "唐士杰醫師什麼時候有門診？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。可線上掛號或來電 07-733-0409 預約。"
+            "text": "唐士杰醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。可線上掛號或來電 07-733-0409 預約。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "杰立骨科診所有哪些醫師？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "杰立骨科診所目前有兩位骨科醫師：院長唐士杰醫師（骨科專科醫師、前台中榮總骨科主治醫師，專長足踝、脊椎、關節重建）與翁碩伯醫師（高雄市立聯合醫院骨科主治醫師，專長骨折創傷、運動傷害、微創關節鏡與人工關節）。醫師完整介紹：https://jerryortho.com/doctors/"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "翁碩伯醫師什麼時候在杰立骨科看診？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "翁碩伯醫師為高雄市立聯合醫院骨科主治醫師，每週二、週四晚上 18:30–21:00 在杰立骨科診所看診。可線上掛號或來電 07-733-0409 預約。"
           }
         },
         {
@@ -628,7 +750,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
 <nav id="mainNav">
   <a href="#" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;"><img src="https://jerryortho.com/Logo.png" alt="杰立骨科" style="height:36px; width:auto; display:block;">杰立骨科診所</a>
   <ul class="nav-links">
-    <li><a href="#about">關於院長</a></li>
+    <li><a href="/doctors/">醫師團隊</a></li>
     <li class="nav-dropdown">
       <a href="/articles/" class="nav-dropdown-trigger">治療項目 ▾</a>
       <ul class="nav-dropdown-menu">
@@ -659,7 +781,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
     <p class="hero-sub">不用跑大醫院，享有同等級的骨科診療。從精準診斷到再生治療，我們陪你找出問題、評估選項，一起決定下一步。</p>
     <div class="hero-btns">
       <a href="/articles/" class="btn-primary">了解治療項目</a>
-      <a href="#about" class="btn-secondary">認識院長</a>
+      <a href="/doctors/" class="btn-secondary">認識醫師團隊</a>
     </div>
     <div class="hero-services">
       <div class="hero-services-label">服務項目</div>
@@ -710,50 +832,34 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
 
 <section id="about">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <div class="about-img-main">
-          <img src="about-main.jpg" alt="唐士杰院長">
-        </div>
-        <div class="about-img-accent">
-          <img src="about-accent.jpg" alt="唐士杰院長診間操作">
+    <div class="team-head reveal">
+      <div class="section-tag">醫師團隊</div>
+      <h2 class="section-title">懂手術的人，<br>才知道什麼時候<span class="nw">不需要手術。</span></h2>
+      <p class="about-body">杰立的醫師都在醫學中心完成骨科訓練，開過各式骨科手術，清楚手術的時機，也清楚什麼時候其實不需要走到那一步。</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <a href="/doctors/#tang" class="team-photo"><img src="about-main.jpg" alt="唐士杰院長" loading="lazy"></a>
+        <div class="team-body">
+          <div class="team-role">院長</div>
+          <h3 class="team-name"><a href="/doctors/#tang">唐士杰 醫師</a></h3>
+          <p class="team-title">骨科專科醫師<br><span class="nw">前台中榮總</span><span class="nw">骨科主治醫師</span></p>
+          <div class="team-tags"><span>足踝</span><span>脊椎</span><span>關節重建</span><span>超音波導引注射</span></div>
+          <a href="/doctors/#tang" class="team-more">完整介紹 →</a>
         </div>
       </div>
-      <div class="reveal">
-        <div class="section-tag">院長介紹</div>
-        <h2 class="section-title">唐士杰 醫師</h2>
-        <div class="dr-credential">
-          <span>骨科專科醫師</span>
-          <span>前台中榮總主治醫師</span>
-          <span>足踝專科</span>
-          <span>脊椎專科</span>
-          <span>關節重建</span>
-        </div>
-        <blockquote class="about-quote">「懂手術的人，<br>才知道什麼時候不需要手術。」</blockquote>
-        <p class="about-body">我是土生土長的高雄人，高雄醫學大學畢業後，在台中榮民總醫院完成骨科專科訓練，專攻足踝、脊椎與關節重建，並留任主治醫師。</p>
-        <p class="about-body">在醫院開過各式骨科手術，我比誰都清楚手術的時機，也清楚<strong>什麼時候其實不需要走到那一步</strong>。從醫學中心走到診所，我希望用這份骨科專業，幫助更多人恢復功能，重拾健康生活。</p>
-        <p class="about-body">在杰立，我們讓影像說話，清楚解釋說明，尊重每個治療選擇。</p>
-        <div class="training-list">
-          <div class="training-title">訓練軌跡</div>
-          <div class="training-item">
-            <div class="training-dot"></div>
-            <div class="training-text"><strong>高雄醫學大學 醫學系</strong>完整西醫醫學訓練，奠定臨床基礎</div>
-          </div>
-          <div class="training-item">
-            <div class="training-dot"></div>
-            <div class="training-text"><strong><a href="https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=03a8e2MLtyIbaFydSpm%252FCA%253D%253D" target="_blank" rel="noopener noreferrer" style="color:var(--navy); text-decoration:underline; text-decoration-color:var(--gold); text-underline-offset:3px;">台中榮民總醫院 骨科部 專科訓練</a></strong>足踝專科・脊椎專科・關節重建・骨折創傷・運動醫學</div>
-          </div>
-          <div class="training-item">
-            <div class="training-dot"></div>
-            <div class="training-text"><strong>台中榮民總醫院 骨科 主治醫師</strong>留任主治，累積豐富手術經驗</div>
-          </div>
-          <div class="training-item">
-            <div class="training-dot"></div>
-            <div class="training-text"><strong>杰立骨科診所 創辦人・院長</strong>以手術等級的解剖知識，提供高雄病人精準的骨科診療</div>
-          </div>
+      <div class="team-card reveal">
+        <a href="/doctors/#weng" class="team-photo"><img src="dr-weng.jpg" alt="翁碩伯醫師" width="480" height="640" loading="lazy"></a>
+        <div class="team-body">
+          <div class="team-role">骨科主治醫師</div>
+          <h3 class="team-name"><a href="/doctors/#weng">翁碩伯 醫師</a></h3>
+          <p class="team-title">現職 <a class="team-hosp" href="https://www.kmuh.gov.tw/News_InformationContent.aspx?n=E5C0F6A40A13E849&amp;sms=3AAAF95486579FCA&amp;s=F3C23FAD94480777" target="_blank" rel="noopener noreferrer"><span class="nw">高雄市立聯合醫院</span><br><span class="nw">骨科主治醫師</span></a></p>
+          <div class="team-tags"><span>骨折創傷</span><span>運動傷害</span><span>關節鏡</span><span>人工關節</span></div>
+          <a href="/doctors/#weng" class="team-more">完整介紹 →</a>
         </div>
       </div>
     </div>
+    <div class="team-cta reveal"><a href="/doctors/" class="btn-secondary">認識醫師團隊</a></div>
   </div>
 </section>
 
@@ -776,23 +882,23 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
             <tbody>
               <tr>
                 <td><div class="td-time">上午</div><div class="td-time-sub">09:00–12:00</div></td>
-                <td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td>
+                <td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td>
               </tr>
               <tr>
                 <td><div class="td-time">下午</div><div class="td-time-sub">14:30–17:30</div></td>
-                <td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
+                <td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
               </tr>
               <tr>
                 <td><div class="td-time">晚上</div><div class="td-time-sub">18:30–21:00</div></td>
-                <td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td><td><span class="dot-open"><span class="sr-only">看診</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
+                <td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-weng">翁<span class="sr-only">碩伯醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="doc-mark doc-weng">翁<span class="sr-only">碩伯醫師</span></span></td><td><span class="doc-mark doc-tang">唐<span class="sr-only">士杰醫師</span></span></td><td><span class="dot-close"><span class="sr-only">休診</span></span></td>
               </tr>
             </tbody>
           </table>
           <div class="schedule-legend">
-            <div class="legend-item"><span class="dot-open"><span class="sr-only">看診</span></span>看診</div>
+            <div class="legend-item"><span class="doc-mark doc-tang">唐</span>唐士杰醫師</div>
+            <div class="legend-item"><span class="doc-mark doc-weng">翁</span>翁碩伯醫師</div>
             <div class="legend-item"><span class="dot-close"><span class="sr-only">休診</span></span>休診</div>
           </div>
-          <p class="schedule-summary">醫師門診：週一、三、五 上午 09:00–12:00、晚上 18:30–21:00；週二、四 上午 09:00–12:00、下午 14:30–17:30；週六 上午 09:00–12:00；週日休診。</p>
         </div>
         <div class="schedule-section">
           <div class="schedule-label">復健時段</div>
@@ -815,7 +921,6 @@ footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 3.5rem 
             <div class="legend-item"><span class="bar-open"><span class="sr-only">開放</span></span>開放</div>
             <div class="legend-item"><span class="bar-close"><span class="sr-only">休息</span></span>休息</div>
           </div>
-          <p class="schedule-summary">復健時段：週一至週五 上午 08:00–12:00、下午 14:00–21:30；週六 上午 08:00–12:00；週日休息。</p>
         </div>
       </div>
       <div class="reveal">
